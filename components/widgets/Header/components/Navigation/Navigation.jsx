@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "../Logo/Logo";
 
 const Navigation = () => {
   const list = ["home", "gallery", "biography", "contacts"];
@@ -7,12 +8,13 @@ const Navigation = () => {
       <ul>
         {list.map((item) => {
           return (
-            <Link href={item === "home" ? "/" : "/" + item}>
-              <li>{item}</li>
+            <Link key={item} href={item === "home" ? "/" : "/" + item}>
+              <li key={item}>{item}</li>
             </Link>
           );
         })}
       </ul>
+      <Logo />
     </nav>
   );
 };
