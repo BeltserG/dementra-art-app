@@ -1,5 +1,5 @@
-import Header from "../widgets/Header/Header";
-import Footer from "../widgets/Footer/Footer";
+import Header from "../widgets/shared/Header/Header";
+import Footer from "../widgets/shared/Footer/Footer";
 
 const MainLayout = ({ children }) => {
   return (

@@ -1,7 +1,9 @@
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div>
+      <img src="" alt="logo" />
+    </div>
   )
 }
 
