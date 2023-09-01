@@ -1,14 +1,14 @@
-
+import Hero from "@/components/widgets/home/Hero/Hero";
+import HomeGallerySection from "@/components/widgets/home/HomeGallerySection/HomeGallerySection";
+import StateMade from "@/components/widgets/home/StateMade/StateMade";
 const Mainpage = (props) => {
   return (
-    <div>Mainpage nad {props.product}</div>
-  )
-}
-export async function getStaticProps(){
-  return {
-    props:{
-      product: "456"
-    }
-  }
-}
-export default Mainpage
+    <>
+      <Hero />
+      <StateMade />
+      <HomeGallerySection />
+    </>
+  );
+};
+
+export default Mainpage;
