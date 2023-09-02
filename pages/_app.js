@@ -1,4 +1,3 @@
-import "@/styles/globals.css";
 import MainLayout from "@/components/Layout/MainLayout";
 
 export default function App({ Component, pageProps }) {

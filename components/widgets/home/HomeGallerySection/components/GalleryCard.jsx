@@ -1,8 +1,12 @@
 import React from 'react'
 
-const GalleryCard = () => {
+const GalleryCard = ({data}) => {
   return (
-    <div>GalleryCard</div>
+    <div>
+      <img src="" alt={data.id} />
+      <h3>{data.id}</h3>
+      <p>{data.description}</p>
+    </div>
   )
 }
 

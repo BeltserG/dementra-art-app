@@ -1,8 +1,17 @@
-
 const StateMade = () => {
   return (
-    <section>StateMade</section>
-  )
-}
+    <section>
+      <h2></h2>
+      <div>
+        <div>
+          <img src="" alt="portrait" />
+        </div>
+        <div>
+          <p></p>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default StateMade
+export default StateMade;
