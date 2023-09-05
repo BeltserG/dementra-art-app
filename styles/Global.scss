@@ -1,0 +1,14 @@
+@use "./Normalize.scss";
+@use "./Variables.scss" as v;
+
+@font-face {
+  font-family: "Grandline";
+  font-style: regular;
+  font-weight: 700;
+  src: url(/fonts/grandline/Grandline.ttf) format("truetype");
+}
+
+html {
+  background-color: rgb(149, 179, 206);
+  font-family: "Grandline", sans-serif;
+}

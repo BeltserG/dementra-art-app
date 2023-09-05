@@ -1,0 +1,44 @@
+//Colors
+
+$darkBlue: hsl(209, 23%, 22%);
+$veryDarkBlueDarkMode:hsl(207, 26%, 17%);
+$veryDarkBlueLightMode:hsl(200, 15%, 8%);
+$darkGray: #858585;
+$veryLightGray:hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+
+//Font-size
+
+$fs-primary: 14px;
+$fs-secondary: 16px;
+
+//Font-family
+
+$ff-nunito: 'Nunito Sans', sans-serif;
+
+//Shadow
+$smallShadow:
+0px 1px 2.6px -8px rgba(0, 0, 0, 0.08),
+0px 1px 15px -8px rgba(0, 0, 0, 0.26);
+
+$mediumShadow:
+  0px 0px 3px rgba(0, 0, 0, 0.342)
+;
+$largeShadow:
+0px 0px 1.3px rgba(0, 0, 0, 0.343),
+0px 0px 8px rgba(0, 0, 0, 0.45)
+;
+
+//Time
+
+$trans-fast: 250ms;
+
+@mixin button{
+    text-transform: capitalize;
+    background-color: $white;
+    border: 0;
+    box-shadow: $mediumShadow;
+    border-radius: .1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
