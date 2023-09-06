@@ -1,0 +1,58 @@
+@use "/styles/Variables.scss" as v;
+.mob-nav-button{
+    display: block;
+    z-index:10;
+    background: transparent;
+    padding: 0;
+    width: 2rem;
+    border:0;
+    cursor: pointer;
+    position: relative;
+}
+.mob-nav-button svg{
+    display: block;
+}
+
+// .mob-nav-button .line{
+//     fill: black;
+//     transition: 
+//         y v.$tr-fast ease-in v.$tr-fast,
+//         opacity 0ms ease-in v.$tr-fast,
+//         rotate v.$tr-fast ease-in;
+//     transform-origin: center;
+// }
+
+.mob-nav-button .line{
+    fill: rgb(0, 0, 0);
+    transition: 
+        y v.$tr-fast ease-in v.$tr-fast,
+        opacity 0ms ease-in v.$tr-fast,
+        rotate v.$tr-fast ease-in;
+    transform-origin: center;
+}
+
+.mob-nav-button.opened .line{
+    transition: 
+        y v.$tr-fast ease-in,
+        opacity 0ms ease-in,
+        rotate v.$tr-fast ease-in v.$tr-fast;
+}
+
+.mob-nav-button.opened :is(.top,.bottom){
+    y: 45;
+}
+.mob-nav-button.opened .top{
+    rotate: 45deg;
+}
+.mob-nav-button.opened .bottom{
+    rotate: -45deg;
+}
+.mob-nav-button.opened .middle{
+    opacity:0;
+}
+
+@media (min-width: 600px){
+    .mob-nav-button{
+        display: none;
+    }
+}

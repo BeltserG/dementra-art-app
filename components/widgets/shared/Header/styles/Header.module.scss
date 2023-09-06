@@ -1,0 +1,104 @@
+@use "/styles/Variables.scss" as v;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: transparent;
+    padding: v.$p-general calc(v.$p-general*2);    
+}
+
+.logo-container{
+    width: 100px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+
+}
+
+.header__nav{
+    
+}
+.header__nav__list{
+    position: absolute;
+    z-index: 9;
+    top:0;
+    right: 0;
+    height: 100dvh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    list-style: none;
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: rgb(25, 92, 19);
+    transform: translateX(100%);
+    transition: transform v.$tr-fast;
+}
+.header__nav__list.opened{
+    transform: translateX(0);
+}
+.header__nav__list a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    flex: 1;
+}
+.header__nav__list a:visited{
+    color: black;
+}
+
+.header__nav__list--item{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header__nav__list a{
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+}
+.header__nav__list--item::after{
+    position:absolute;
+    content: "";
+    width:0;
+    z-index: 10;
+    background-color: #B4A5A5;
+    height: 0.3rem;
+    bottom: 0px;
+    transition: v.$tr-fast;
+    z-index: 10;
+    left: 0;
+}
+
+.header__nav__list a:hover .header__nav__list--item::after {
+    width: 100%;
+}
+
+@media (min-width: 600px){
+    .header__nav__list{
+        position: static;
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        list-style: none;
+        margin:0;
+        padding:0;
+        height: auto;
+        transform: translateX(0);
+    }
+
+
+}
+@media (min-width: 900px){
+
+}

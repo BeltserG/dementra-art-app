@@ -1,8 +1,10 @@
+import classes from "@/components/widgets/shared/Header/styles/Header.module.scss";
 
 const Logo = () => {
+  console.log(classes)
   return (
-    <div>
-      <img src="" alt="logo" />
+    <div className={classes["logo-container"]}>
+      <img src="" alt="logo"  className={classes.logo}/>
     </div>
   )
 }

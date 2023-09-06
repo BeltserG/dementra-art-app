@@ -4,6 +4,7 @@ import Footer from "../widgets/shared/Footer/Footer";
 const MainLayout = ({ children }) => {
   return (
     <>
+      {/* <LightBox /> */}
       <Header data="123" />
       <main>{children}</main>
       <Footer />
