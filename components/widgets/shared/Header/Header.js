@@ -3,7 +3,7 @@ import Logo from "./components/Logo/Logo";
 import classes from "./styles/Header.module.scss";
 
 const Header = (props) => {
-  console.log(classes)
+  console.log("rendering Header")
   return (
     <header className={classes.header}>
       <Logo />

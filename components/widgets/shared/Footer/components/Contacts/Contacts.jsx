@@ -1,3 +1,4 @@
+import classes from "@/components/widgets/shared/Footer/styles/Footer.module.scss";
 
 const Contacts = () => {
   return (
