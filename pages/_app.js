@@ -1,12 +1,12 @@
 import MainLayout from "@/components/Layout/MainLayout";
 import Head from "next/head";
-import { getFullPageTitle } from "@/helpers/getFullPageTitle";
+import { getFullPageTitle } from "@/helpers/strings/getFullPageTitle";
 import "@/styles/Global.scss";
 
 export default function App({ Component, pageProps }) {
   const fullPageTitle = getFullPageTitle("Dementra Art");
   return (
-    <MainLayout>
+    <MainLayout pageProps={pageProps}>
       <Head>
         <title>{fullPageTitle}</title>
         <meta

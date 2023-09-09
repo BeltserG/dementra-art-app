@@ -5,7 +5,8 @@
     align-items: center;
     justify-content: space-between;
     // background-color: transparent;
-    padding: v.$p-general calc(v.$p-general*2);    
+    padding: v.$p-general calc(v.$p-general*2);
+    position: sticky;    
 }
 
 .logo-container{

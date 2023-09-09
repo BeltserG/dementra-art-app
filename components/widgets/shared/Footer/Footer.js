@@ -1,18 +1,20 @@
 import Copyright from "./components/Copyright/Copyright";
 import Logo from "./components/Logo/Logo";
-import Contacts from "./components/Contacts/Contacts";
+import Menu from "./components/Menu/Menu";
 import SocialNetworks from "./components/SocialNetworks/SocialNetworks";
-import classes from "./styles/Footer.module.scss";
+import cl from "./styles/Footer.module.scss";
+import classNames from "classnames";
 
-const Footer = () => {
+const Footer = ({pageProps}) => {
+  const {socialNetworks} = pageProps;
   return (
-    <footer>
-      <div>
+    <footer className={classNames(cl["footer"])}>
+      <div className={classNames(cl["footer-info-container"])}>
         <Logo />
-        <Contacts />
-        <SocialNetworks />
+        <Menu />
+        <SocialNetworks socialNetworks={socialNetworks}/>
       </div>
-      <div>
+      <div className={classNames(cl["footer-copyright-container"])}>
         <Copyright />
       </div>
     </footer>

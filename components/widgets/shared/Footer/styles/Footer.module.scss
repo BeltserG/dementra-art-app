@@ -1,15 +1,53 @@
-.footer{
+@use "/styles/Variables.scss" as v;
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: v.$p-general;
 }
 .footer-info-container{
+    display: flex;
+    justify-content: space-between;
+
 
 }
 .footer-info__logo{
 
 }
-.footer-info__contacts{
+.logo--image{
 
 }
-.footer__social-networks{
-    
+.logo--email{
+
+}
+.footer-info__sections{
+
+}
+.sections--heading{
+
+}
+.sections--list{
+
+}
+.sections--list-item{
+
+}
+.footer-info__social-networks{
+
+}
+.social-networks--heading{
+
+}
+.social-networks--list{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.social-networks--item{
+    width: 2rem;
+}
+.footer-copyright-container{
+
 }

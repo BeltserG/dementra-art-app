@@ -1,0 +1,17 @@
+[
+  {
+    "id": "ArtStation",
+    "url": "https://www.artstation.com/linaraaa/",
+    "icon": "images/icons/artstation.svg"
+  },
+  {
+    "id": "Twitter",
+    "url": "https://www.twitter.com/DementraLi",
+    "icon": "images/icons/twitter.svg"
+  },
+  {
+    "id": "Instagram",
+    "url": "http://twitter.com/",
+    "icon": "images/icons/instagram.svg"
+  }
+]

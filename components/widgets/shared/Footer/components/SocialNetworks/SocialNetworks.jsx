@@ -1,17 +1,23 @@
-import classes from "@/components/widgets/shared/Footer/styles/Footer.module.scss";
+import cl from "@/components/widgets/shared/Footer/styles/Footer.module.scss";
+import classNames from "classnames";
 // import fs from "fs";
-const SocialNetworks = () => {
-  // const networks = getLocalDataFromJSON("../gg.json");
+const SocialNetworks = ({socialNetworks}) => {
+  // console.log(socialNetworks[0]);
   return (
-    <ul>
-      <li></li>
-    </ul>
+    <div className={classNames(cl["footer-info__social-networks"])}>
+      <h4 className={classNames(cl["social-networks--heading"])}>Follow</h4>
+      <ul className={classNames(cl["social-networks--list"])}>
+        {socialNetworks.map((network)=>
+        <a key={network.id + "-link"} href={network.url} target="_blank">
+          <img key={network.id}
+          className={classNames(cl["social-networks--item"])}
+          src={network.icon}/>
+        </a>
+        )}
+      </ul>
+    </div>
   )
 }
 
-export async function getStaticProps(){
-  
-  fs
-}
 
 export default SocialNetworks
