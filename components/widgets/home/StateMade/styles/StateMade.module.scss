@@ -1,0 +1,28 @@
+@use "/styles/Variables.scss" as v;
+
+.state-made{
+    height: 100dvh;
+    padding: v.$p-general;
+}
+
+.state-made__heading{
+    text-align: center;
+    text-decoration: underline;
+}
+.state-made__content{
+    display: flex;
+    flex-direction: column;
+}
+.content__image-container{
+
+}
+.content__image{
+
+}
+.content__text-container{
+
+}
+
+.content__text{
+
+}

@@ -1,5 +1,8 @@
-import GalleryCard from "./components/GalleryCard"
+import GalleryCard from "./components/GalleryCard/GalleryCard"
 import gallery from "@/data/gallery.json";
+import cl from "./styles/HomeGallerySection.module.scss"
+import classNames from "classnames";
+
 const HomeGallerySection = () => {
   return (
     <section>

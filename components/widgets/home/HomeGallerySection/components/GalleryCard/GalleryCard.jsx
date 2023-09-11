@@ -1,5 +1,5 @@
-import React from 'react'
-
+import cl from "./styles/GalleryCard.module.scss";
+import classNames from "classnames";
 const GalleryCard = ({data}) => {
   return (
     <div>

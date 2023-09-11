@@ -6,7 +6,10 @@
     justify-content: space-between;
     // background-color: transparent;
     padding: v.$p-general calc(v.$p-general*2);
-    position: sticky;    
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%; 
 }
 
 .logo-container{
@@ -37,7 +40,7 @@
     list-style: none;
     margin:0;
     padding:0;
-    height: 100%;
+    // height: 100%;
     // background-color: rgb(25, 92, 19);
     transform: translateX(100%);
     transition: transform v.$tr-fast;
