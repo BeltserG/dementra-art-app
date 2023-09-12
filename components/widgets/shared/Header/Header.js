@@ -1,11 +1,15 @@
 import Navigation from "./components/Navigation/Navigation";
 import Logo from "./components/Logo/Logo";
-import classes from "./styles/Header.module.scss";
+import cl from "./styles/Header.module.scss";
+import { useEffect } from "react";
+import { navScrollAnimation } from "./anim/navScrollAnimation";
 
 const Header = (props) => {
-  console.log("rendering Header")
+
+  // useEffect(() => {navScrollAnimation(cl["header__nav"])}, [])
+
   return (
-    <header className={classes.header}>
+    <header className={cl.header}>
       <Logo />
       <Navigation />
     </header>

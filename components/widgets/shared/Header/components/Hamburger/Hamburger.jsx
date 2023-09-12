@@ -1,6 +1,13 @@
+import { useEffect } from "react";
 import cl from "./styles/Hamburger.module.scss";
 import classNames from "classnames";
+import { hamburgerScrollAnimation } from "../../anim/hamburger";
+
 const Hamburger = ({navOpened, changeNavOpened}) => {
+  useEffect(() => {
+    hamburgerScrollAnimation(cl["mob-nav-button"]);
+  }, [])
+
   return (
     <button className={classNames(cl["mob-nav-button"], navOpened ? cl["opened"] : cl["closed"])} 
             onClick={()=> changeNavOpened()}>

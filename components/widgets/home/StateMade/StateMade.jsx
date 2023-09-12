@@ -1,6 +1,9 @@
 import cl from "./styles/StateMade.module.scss"
 import classNames from "classnames";
+import { stateMadeScrollAnimation } from "./anim/stateMadeScroll";
+import { useEffect } from "react";
 const StateMade = () => {
+  useEffect(() => stateMadeScrollAnimation(cl["state-made"]), []);
   return (
     <section className={classNames(cl["state-made"])}>
       <h2 className={classNames(cl["state-made__heading"])}>Art & Style</h2>
