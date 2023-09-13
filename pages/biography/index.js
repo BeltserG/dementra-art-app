@@ -1,6 +1,4 @@
-import React from 'react'
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
-import { getPathString } from "@/helpers/strings/getPathString";
 
 const biography = () => {
   return (
@@ -9,9 +7,13 @@ const biography = () => {
 }
 
 export async function getStaticProps(context){
-  const dataName = "socialNetworks";
-  const filePath = getPathString(["data"], `${dataName}.json`);
-  return getStaticPropsFromJSON(filePath, dataName);
+  const dataNames = ["socialNetworks", "gallery", "biography"];
+  const data = getStaticPropsFromJSON(dataNames);
+  return {
+    props:{
+      ...data
+    }
+  }
 }
 
 export default biography

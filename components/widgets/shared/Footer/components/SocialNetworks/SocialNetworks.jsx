@@ -2,7 +2,6 @@ import cl from "@/components/widgets/shared/Footer/styles/Footer.module.scss";
 import classNames from "classnames";
 // import fs from "fs";
 const SocialNetworks = ({socialNetworks}) => {
-  // console.log(socialNetworks[0]);
   return (
     <div className={classNames(cl["footer-info__social-networks"])}>
       <h4 className={classNames(cl["social-networks--heading"])}>Follow</h4>

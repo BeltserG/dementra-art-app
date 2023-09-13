@@ -8,9 +8,13 @@ const glass = () => {
 }
 
 export async function getStaticProps(context){
-  const dataName = "socialNetworks";
-  const filePath = getPathString(["data"], `${dataName}.json`);
-  return getStaticPropsFromJSON(filePath, dataName);
+  const dataNames = ["socialNetworks", "gallery", "biography"];
+  const data = getStaticPropsFromJSON(dataNames);
+  return {
+    props:{
+      ...data
+    }
+  }
 }
 
 export default glass

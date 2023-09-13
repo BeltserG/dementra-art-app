@@ -1,15 +1,19 @@
-import GalleryCard from "./components/GalleryCard/GalleryCard"
-import gallery from "@/data/gallery.json";
-import cl from "./styles/HomeGallerySection.module.scss"
+import GalleryCard from "./components/GalleryCard/GalleryCard";
+import cl from "./styles/HomeGallerySection.module.scss";
 import classNames from "classnames";
 
-const HomeGallerySection = () => {
+const HomeGallerySection = ({ gallery }) => {
+  console.log(gallery);
   return (
-    <section>
-        <h2></h2>
-        {gallery.map(section=> <GalleryCard key={section.id} data={section}/>)}
+    <section className={classNames(cl["gallery"])}>
+      <h2 className={classNames(cl["gallery__heading"])}>Gallery</h2>
+      <div className={classNames(cl["gallery__items-container"])}>
+        {gallery.map((section) => (
+          <GalleryCard key={section.id} data={section} />
+        ))}
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default HomeGallerySection
+export default HomeGallerySection;

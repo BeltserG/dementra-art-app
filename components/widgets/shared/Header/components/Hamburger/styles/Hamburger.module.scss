@@ -8,9 +8,14 @@
     border:0;
     cursor: pointer;
     position: relative;
+    
 }
 .mob-nav-button svg{
     display: block;
+    
+}
+.mob-nav-button svg rect{
+    fill: white !important;
 }
 
 // .mob-nav-button .line{

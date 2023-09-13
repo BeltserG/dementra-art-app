@@ -1,5 +1,4 @@
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
-import { getPathString } from "@/helpers/strings/getPathString";
 
 const oil_painting = () => {
   return (
@@ -8,9 +7,14 @@ const oil_painting = () => {
 }
 
 export async function getStaticProps(context){
-  const dataName = "socialNetworks";
-  const filePath = getPathString(["data"], `${dataName}.json`);
-  return getStaticPropsFromJSON(filePath, dataName);
+  const dataNames = ["socialNetworks", "gallery", "biography"];
+  // const filePath = getPathString(["data"], `${dataName}.json`);
+  const data = getStaticPropsFromJSON(dataNames);
+  return {
+    props:{
+      ...data
+    }
+  }
 }
 
 export default oil_painting

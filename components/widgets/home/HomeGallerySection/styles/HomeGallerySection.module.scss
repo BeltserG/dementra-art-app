@@ -1,0 +1,17 @@
+@use "/styles/Variables.scss" as v;
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: v.$p-general;
+}
+.gallery__heading{
+
+    text-align: center;
+}
+.gallery__items-container{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}

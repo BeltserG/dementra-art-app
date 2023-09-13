@@ -1,9 +1,8 @@
-[
-  {
-    "id": "biography",
-    "heading":"Art & Style",
-    "photo": "",
-    "description": "",
-    "detailed": ""
-  }
-]
+{
+  "id": "biography",
+  "heading": "Art & Style",
+  "photo": "",
+  "description": 
+  "lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy eirmod tempor incididunt ut labore et dolore magna aliquy lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy eirmod tempor incididunt ut labore et dolore magna aliquy lorem ipsum dolor sit amet, consectetur adip lorem, sed diam nonumy eirmod tempor incididunt ut labore et dolore magna aliquy",
+  "detailed": ""
+}

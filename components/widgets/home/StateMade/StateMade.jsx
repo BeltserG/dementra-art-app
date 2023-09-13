@@ -2,17 +2,18 @@ import cl from "./styles/StateMade.module.scss"
 import classNames from "classnames";
 import { stateMadeScrollAnimation } from "./anim/stateMadeScroll";
 import { useEffect } from "react";
-const StateMade = () => {
+const StateMade = ({biography}) => {
   useEffect(() => stateMadeScrollAnimation(cl["state-made"]), []);
+  console.log(biography.heading);
   return (
     <section className={classNames(cl["state-made"])}>
-      <h2 className={classNames(cl["state-made__heading"])}>Art & Style</h2>
+      <h2 className={classNames(cl["state-made__heading"])}>{biography.heading}</h2>
       <div className={classNames(cl["state-made__content"])}>
         <div className={classNames(cl["content__image-container"])}>
           <img className={classNames(cl["content__image"])} src="" alt="portrait" />
         </div>
         <div className={classNames(cl["content__text-container"])}>
-          <p className={classNames(cl["content__text"])}></p>
+          <p className={classNames(cl["content__text"])}>{biography.description}</p>
         </div>
       </div>
     </section>

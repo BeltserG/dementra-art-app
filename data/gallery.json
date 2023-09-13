@@ -1,20 +1,20 @@
 [
   {
-    "id": "oil painting",
+    "id": "oil-painting",
     "works": {},
-    "description": "lorem ipsum dolor sit amet, consectet",
+    "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
     "thumbnail": "url"
   },
   {
-    "id": "digital",
+    "id": "digital-art",
     "works": {},
-    "description": "lorem ipsum dolor sit amet, consectet",
+    "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
     "thumbnail": "url"
   },
   {
     "id": "glass",
     "works": {},
-    "description": "lorem ipsum dolor sit amet, consectet",
+    "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
     "thumbnail": "url"
   }
 ]

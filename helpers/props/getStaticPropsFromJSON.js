@@ -1,14 +1,6 @@
 import { getPathString } from '../strings/getPathString';
-async function getStaticPropsFromJSON(url, dataName=""){
-    const data = getLocalDataFromJSON(url, dataName);
-    return {
-        props:{
-            [dataName]: data
-        }
-    }
-}
 
-function getLocalDataFromJSON(url, dataName=""){
+function getLocalDataFromJSON(url){
     const fs = require('fs');
     let data;
     try{
@@ -17,6 +9,22 @@ function getLocalDataFromJSON(url, dataName=""){
         data = [];
     }
     return data;
+}
+
+function getStaticPropsFromJSON(dataNames=[]){
+    const staticProps = {};
+
+    if(dataNames.length === 0){
+        return staticProps;
+    }
+
+    dataNames.map(dataName => {
+        const path = getPathString(["data"], `${dataName}.json`);
+        const data = getLocalDataFromJSON(path);
+        staticProps[dataName] = data;
+    })
+
+    return staticProps;
 }
 
 export {getStaticPropsFromJSON}

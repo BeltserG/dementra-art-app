@@ -1,14 +1,15 @@
 import Header from "../widgets/shared/Header/Header";
 import Footer from "../widgets/shared/Footer/Footer";
+import { useRouter } from "next/router";
 
 const MainLayout = ({ children, pageProps }) => {
-  console.log(pageProps)
+  const {route} = useRouter();
+  
   return (
     <>
-      {/* <LightBox /> */}
-      <Header data="123" />
+      {route !== "/_error" && <Header />}
       <main>{children}</main>
-      <Footer pageProps={pageProps}/>
+      {route !== "/_error" && <Footer pageProps={pageProps}/>}
     </>
   );
 };
