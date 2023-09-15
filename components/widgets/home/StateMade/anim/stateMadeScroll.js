@@ -6,15 +6,14 @@ function stateMadeScrollAnimation(className = ""){
   gsap.to(`.${className}`, {
     scrollTrigger:{
         trigger: `.${className}`,
-        
         start: `top bottom`,
-        end: `bottom top`,
+        end: `top center`,
         metrics: true,
         toggleActions: "play none none none",
-        scrub:true,
+        // scrub:true,
     },
     opacity: 1,
-    // ease: "linear",
+    ease: "linear",
     duration: 1});
 }
 

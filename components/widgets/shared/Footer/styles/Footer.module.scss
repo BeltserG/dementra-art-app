@@ -47,6 +47,12 @@
 }
 .social-networks--item{
     width: 2rem;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: v.$tr-fast;
+}
+.social-networks--item:hover{
+    opacity: .85;
 }
 .footer-copyright-container{
 

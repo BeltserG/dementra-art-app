@@ -1,8 +1,11 @@
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
+import DigitalGallery from "@/components/widgets/digital/DigitalGallery/DigitalGallery";
 
 const digital = () => {
   return (
-    <div>digital</div>
+    <>
+      <DigitalGallery />
+    </>
   )
 }
 

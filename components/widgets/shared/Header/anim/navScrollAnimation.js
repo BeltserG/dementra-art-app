@@ -6,7 +6,6 @@ function navScrollAnimation(className = ""){
   gsap.to(`.${className}`, {
     scrollTrigger:{
         trigger: `.${className}`,
-        
         start: `top top`,
         end: `bottom -${window.innerHeight/2}px`,
         metrics: true,
