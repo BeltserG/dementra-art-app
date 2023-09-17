@@ -4,7 +4,6 @@ import StateMade from "@/components/widgets/home/StateMade/StateMade";
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
 // import { getPathString } from "@/helpers/strings/getPathString";
 const Mainpage = (props) => {
-  console.log(props)
   return (
     <>
       <Hero />

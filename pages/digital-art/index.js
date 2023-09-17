@@ -1,10 +1,11 @@
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
 import DigitalGallery from "@/components/widgets/digital/DigitalGallery/DigitalGallery";
-
-const digital = () => {
+import { getDataForTheCurrentPage } from "@/helpers/props/getDataForTheCurrentPage";
+const digital = (props) => {
+  const data  =getDataForTheCurrentPage(props.gallery);
   return (
     <>
-      <DigitalGallery />
+      <DigitalGallery data={data}/>
     </>
   )
 }
@@ -18,5 +19,6 @@ export async function getStaticProps(context){
     }
   }
 }
+
 
 export default digital

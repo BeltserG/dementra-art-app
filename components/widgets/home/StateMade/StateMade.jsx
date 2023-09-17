@@ -4,7 +4,6 @@ import { stateMadeScrollAnimation } from "./anim/stateMadeScroll";
 import { useEffect } from "react";
 const StateMade = ({biography}) => {
   useEffect(() => stateMadeScrollAnimation(cl["state-made"]), []);
-  console.log(biography.heading);
   return (
     <section className={classNames(cl["state-made"])}>
       <h2 className={classNames(cl["state-made__heading"])}>{biography.heading}</h2>

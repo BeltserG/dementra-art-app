@@ -1,8 +1,15 @@
 import React from 'react'
+import ArtWork from './components/ArtWork/ArtWork'
+import cl from"./styles/DigitalGallery.module.scss"
+import classNames from 'classnames'
 
-const DigitalGallery = () => {
+const DigitalGallery = ({data}) => {
   return (
-    <div>DigitalGallery</div>
+    <div>
+      <div>
+        {data.works.map(artData =><ArtWork artData={artData}/>)}
+      </div>
+    </div>
   )
 }
 
