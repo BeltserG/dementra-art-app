@@ -7,7 +7,7 @@ const DigitalGallery = ({data}) => {
   return (
     <div>
       <div>
-        {data.works.map(artData =><ArtWork artData={artData}/>)}
+        {data.works.map(artData =><ArtWork key={artData.id} artData={artData}/>)}
       </div>
     </div>
   )

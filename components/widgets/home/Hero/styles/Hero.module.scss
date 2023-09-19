@@ -2,8 +2,10 @@
     height: 100dvh;
     position: relative;
     z-index:-1;
+    background-image: url("/images/hero_images/forest.png");
 }
 .hero__heading{
+    font-size: 3rem;
     position: absolute;
     top:40%;
     width: 100%;

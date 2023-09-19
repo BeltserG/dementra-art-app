@@ -1,29 +1,34 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import cl from "@/components/widgets/shared/Header/styles/Header.module.scss";
 import classNames from "classnames";
 import { useRouter } from "next/router";
 import NavigationSecond from "../NavigationSecond/NavigationSecond";
+import { GalleryIsClickedContext } from "../../context/galleryIsClickedContext";
+import { useContext } from "react";
 
-const NavItem = ({ item, changeNavOpened = null }) => {
+const NavItem = ({ item, changeNavOpened }) => {
   let route = useRouter().pathname;
-  console.log(item)
   route = route.slice(route.lastIndexOf("/") + 1);
-  console.log(route)
-  if(route === ""){
-    route = "home"
+  if (route === "") {
+    route = "home";
   }
   const underline = route === item ? cl["underlined"] : "";
+
+  const {setGalleryIsClicked} = useContext(GalleryIsClickedContext);
 
   if (item === "gallery") {
     return (
       <div
         className={classNames(cl["nav__link"], cl["gallery"])}
         key={item}
-        onClick={changeNavOpened}
+        
+        onMouseEnter={()=>setGalleryIsClicked(false)}
       >
         <li key={item} className={cl["header__nav__list--item"]}>
-          <NavigationSecond />
+          <NavigationSecond
+          changeNavOpened={changeNavOpened}
+          />
           {item}
         </li>
       </div>
@@ -36,7 +41,10 @@ const NavItem = ({ item, changeNavOpened = null }) => {
       href={getRoute(item)}
       onClick={changeNavOpened}
     >
-      <li key={item} className={classNames(cl["header__nav__list--item"], underline)}>
+      <li
+        key={item}
+        className={classNames(cl["header__nav__list--item"], underline)}
+      >
         {item}
       </li>
     </Link>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import classNames from "classnames";
 import Link from "next/link";
+import { GalleryIsClickedContextProvider } from "./context/galleryIsClickedContext.js";
 import NavItem from "./components/NavItem/NavItem.jsx";
 import LightBox from "@/components/widgets/shared/Header/components/LightBox/LightBox";
 import Hamburger from "../Hamburger/Hamburger.jsx";
@@ -21,22 +22,29 @@ const Navigation = () => {
     setNavOpened((prev) => !prev);
   }
 
+
   return (
     <>
       <LightBox navOpened={navOpened} changeNavOpened={changeNavOpened} />
-      <nav className={cl["header__nav"]}>
-        <Hamburger navOpened={navOpened} changeNavOpened={changeNavOpened} />
-        <ul
-          className={classNames(
-            cl["header__nav__list"],
-            navOpened ? cl["opened"] : cl["closed"]
-          )}
-        >
-          {list.map((item) => (
-            <NavItem key={item} item={item} changeNavOpened={changeNavOpened} />
-          ))}
-        </ul>
-      </nav>
+      <GalleryIsClickedContextProvider>
+        <nav className={cl["header__nav"]}>
+          <Hamburger navOpened={navOpened} changeNavOpened={changeNavOpened} />
+          <ul
+            className={classNames(
+              cl["header__nav__list"],
+              navOpened ? cl["opened"] : cl["closed"]
+            )}
+          >
+            {list.map((item) => (
+              <NavItem
+                key={item}
+                item={item}
+                changeNavOpened={changeNavOpened}
+              />
+            ))}
+          </ul>
+        </nav>
+      </GalleryIsClickedContextProvider>
     </>
   );
 };
