@@ -3,15 +3,14 @@
 
 @font-face {
   font-family: "Grandline";
-  font-style: regular;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: normal;
   src: url(/fonts/grandline/Grandline.ttf) format("truetype");
 }
 
 html {
   background-color: rgb(149, 179, 206);
   font-family: "Grandline", sans-serif;
-  
-  background-color: black;
+  background-color: rgb(11, 22, 11);
   // overflow: hidden;
 }

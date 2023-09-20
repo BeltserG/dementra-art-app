@@ -11,6 +11,8 @@ $white: hsl(0, 0%, 100%);
 
 $fs-primary: 14px;
 $fs-secondary: 16px;
+$fs-h2: 2.25rem;
+$fs-h3: 1.5rem;
 
 //Font-family
 
@@ -30,6 +32,7 @@ $largeShadow:
 ;
 //Padding
 $p-general: 1rem;
+$p-big: 2rem;
 //Time
 
 $tr-fast: 200ms;
@@ -42,4 +45,11 @@ $tr-fast: 200ms;
     border-radius: .1rem;
     padding: .5rem 1rem;
     cursor: pointer;
+}
+
+@font-face {
+  font-family: "Bartone";
+  font-style: regular;
+  font-weight: 700;
+  src: url(/fonts/grandline/Grandline.ttf) format("truetype");
 }

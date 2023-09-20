@@ -5,7 +5,7 @@ const Logo = () => {
     <div className={classNames(cl["footer-info__logo"])}>
       <img className={classNames(cl["logo--image"])} src="" alt="logo" />
       <div className={classNames(cl["logo--email"])}>
-        <p>Contact:<span></span></p>
+        <p>Contact:<span>dementraart7@gmail.com</span></p>
       </div>
     </div>
   )
