@@ -1,10 +1,12 @@
 import React from "react";
 import classNames from "classnames";
-import cl from "./styles/LightBoxView.module.scss";
+import cl from "./styles/WorkFullView.module.scss";
+import LightBox from "../Header/components/LightBox/LightBox";
 
-const LightWorkView = (props) => {
+const WorkFullView = ({fullViewOpened, changeFullViewOpened}) => {
   return (
     <div className={classNames(cl["lightbox-view-container"])}>
+      <LightBox sectionOpened={fullViewOpened} clickHandler={changeFullViewOpened}/>
       <button
         className={classNames(cl["lightbox-view__close-button"])}></button>
       <div className={classNames(cl["lightbox-view__content"])}>
@@ -18,4 +20,4 @@ const LightWorkView = (props) => {
   );
 };
 
-export default LightWorkView;
+export default WorkFullView;

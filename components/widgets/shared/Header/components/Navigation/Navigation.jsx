@@ -25,7 +25,7 @@ const Navigation = () => {
 
   return (
     <>
-      <LightBox navOpened={navOpened} changeNavOpened={changeNavOpened} />
+      <LightBox sectionOpened={navOpened} clickHandler={changeNavOpened} />
       <GalleryIsClickedContextProvider>
         <nav className={cl["header__nav"]}>
           <Hamburger navOpened={navOpened} changeNavOpened={changeNavOpened} />

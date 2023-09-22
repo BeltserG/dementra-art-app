@@ -1,4 +1,4 @@
-import Hero from "@/components/widgets/home/Hero/Hero";
+import Hero from "@/components/widgets/shared/Hero/Hero";
 import HomeGallerySection from "@/components/widgets/home/HomeGallerySection/HomeGallerySection";
 import StateMade from "@/components/widgets/home/StateMade/StateMade";
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";

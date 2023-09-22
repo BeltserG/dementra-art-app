@@ -1,10 +1,10 @@
 import cl from "./styles/LightBox.module.scss";
 import classNames from "classnames";
 
-const LightBox = ({navOpened, changeNavOpened}) => {
+const LightBox = ({sectionOpened, clickHandler}) => {
   return (
-    <div className={classNames(cl["lightbox"], navOpened ? cl["active"] : "")}
-         onClick={()=> changeNavOpened()}></div>
+    <div className={classNames(cl["lightbox"], sectionOpened ? cl["active"] : "")}
+         onClick={clickHandler ? clickHandler : ()=>{}}></div>
   )
 }
 
