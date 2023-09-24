@@ -1,13 +1,18 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext} from "react";
 import Link from "next/link";
 import cl from "@/components/widgets/shared/Header/styles/Header.module.scss";
 import classNames from "classnames";
-import { useRouter } from "next/router";
+import { useRouter} from "next/router";
 import NavigationSecond from "../NavigationSecond/NavigationSecond";
 import { GalleryIsClickedContext } from "../../context/galleryIsClickedContext";
-import { useContext } from "react";
 
 const NavItem = ({ item, changeNavOpened }) => {
+  const [windowWidth, setWindowWidth] = useState(0);
+  useEffect(() => {
+    setWindowWidth(window.innerWidth);
+  }, [])
+  const isMobile = windowWidth < 600;
+
   let route = useRouter().pathname;
   route = route.slice(route.lastIndexOf("/") + 1);
   if (route === "") {
@@ -27,7 +32,7 @@ const NavItem = ({ item, changeNavOpened }) => {
       >
         <li key={item} className={cl["header__nav__list--item"]}>
           <NavigationSecond
-          changeNavOpened={changeNavOpened}
+          changeNavOpened={isMobile ? changeNavOpened : ()=>{}}
           />
           {item}
         </li>
@@ -39,7 +44,7 @@ const NavItem = ({ item, changeNavOpened }) => {
       className={classNames(cl["nav__link"])}
       key={item}
       href={getRoute(item)}
-      onClick={changeNavOpened}
+      onClick={isMobile ? changeNavOpened : ()=>{}}
     >
       <li
         key={item}

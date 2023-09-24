@@ -2,18 +2,17 @@ import { useState } from "react";
 import cl from "./styles/ArtWork.module.scss";
 import classNames from "classnames";
 import LightBox from "@/components/widgets/shared/Header/components/LightBox/LightBox";
-import WorkFullView from "@/components/widgets/shared/WorkFullView/WorkFullView";
+import WorkFullView from "@/components/widgets/shared/WorkFullView/UI/WorkFullView";
 const ArtWork = ({ artData }) => {
   const [fullViewOpened, setFullViewOpened] = useState(false);
   function changeFullViewOpened() {
     setFullViewOpened((prev) => !prev);
-    console.log(!fullViewOpened);
   }
 
   return (
     <div
       className={classNames(cl["digital-gallery__artwork-container"])}
-      onClick={fullViewOpened ? ()=>{}: changeFullViewOpened}
+      onClick={fullViewOpened ? () => {} : changeFullViewOpened}
     >
       {/* <img
         className={classNames(cl["digital-gallery__artwork"])}
@@ -23,6 +22,7 @@ const ArtWork = ({ artData }) => {
       <div className={classNames(cl["artwork__preview-info"])}></div>
       {fullViewOpened && (
         <WorkFullView
+          artData={artData}
           fullViewOpened={fullViewOpened}
           changeFullViewOpened={changeFullViewOpened}
         />

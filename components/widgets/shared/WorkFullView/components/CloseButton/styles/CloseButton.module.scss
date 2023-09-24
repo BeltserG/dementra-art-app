@@ -1,0 +1,15 @@
+@use "/styles/Variables.scss" as v;
+
+.fullview__close-button {
+    border: 0;
+    position: absolute;
+    top: v.$p-general;
+    right: v.$p-general;
+    z-index: 12;
+    background: transparent;
+    cursor: pointer;
+    & svg {
+      fill: rgb(214, 214, 214);
+      width: 2.5rem;
+    }
+  }

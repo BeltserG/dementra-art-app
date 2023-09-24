@@ -16,23 +16,27 @@
     "works": [
       {
         "id":"1",
+        "name": "",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":""
+        "url":"/images/works/digital/Corals/Corals-1.png"
       },
       {
         "id":"2",
+        "name": "",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":""
+        "url":"/images/works/digital/Corals/Corals-1.png"
       },
       {
         "id":"3",
+        "name": "",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":""
+        "url":"/images/works/digital/Corals/Corals-1.png"
       },
       {
         "id":"4",
+        "name": "",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":""
+        "url":"/images/works/digital/Corals/Corals-1.png"
       }
     ],
     "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",

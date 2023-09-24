@@ -110,10 +110,12 @@
 }
 .header__nav__list--item2{
     text-transform: uppercase;
-    font-size: calc(var(--nav-font-base)*.85); 
+    font-size: calc(var(--nav-font-base)*.85);
+    letter-spacing: 0rem;
 }
 .header__nav__list--item{
     font-size: var(--nav-font-base);
+    letter-spacing: .15rem;
 }
 
 .header__nav__list--item{
@@ -168,6 +170,7 @@
     .header__nav__list--item{
         // font-size: calc($nav-item-size*1.5);
         font-size: var(--nav-font-base);
+        letter-spacing: .15rem;
     }
     .header__nav__list2{
         // visibility: visible;
@@ -175,7 +178,7 @@
         left:100%;
         top: 100%;
         flex-direction: row;
-        width:25rem;
+        width:24rem;
     }
     .header__nav__list.opened{
         transform: translateX(0);
@@ -186,7 +189,7 @@
     }
     .gallery:hover .header__nav__list2{
         top:100%;
-        left:-5%;
+        left:-15%;
     }
     .gallery:hover .header__nav__list2.header__nav__list2-clicked{
         top:100%;
@@ -203,7 +206,7 @@
     
     }
     .header__nav__list--item2{
-        font-size: calc(var(--nav-font-base)*.7); 
+        font-size: calc(var(--nav-font-base)*.85); 
     }
 
 
