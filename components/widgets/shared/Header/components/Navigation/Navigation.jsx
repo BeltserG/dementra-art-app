@@ -3,7 +3,7 @@ import classNames from "classnames";
 import Link from "next/link";
 import { GalleryIsClickedContextProvider } from "./context/galleryIsClickedContext.js";
 import NavItem from "./components/NavItem/NavItem.jsx";
-import LightBox from "@/components/widgets/shared/Header/components/LightBox/LightBox";
+import LightBox from "@/components/widgets/shared/LightBox/LightBox.jsx";
 import Hamburger from "../Hamburger/Hamburger.jsx";
 import cl from "@/components/widgets/shared/Header/styles/Header.module.scss";
 import { navScrollAnimation } from "../../anim/navScrollAnimation.js";
@@ -21,7 +21,6 @@ const Navigation = () => {
   function changeNavOpened() {
     setNavOpened((prev) => !prev);
   }
-
 
   return (
     <>

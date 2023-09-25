@@ -1,14 +1,14 @@
 import React from "react";
 import classNames from "classnames";
 import cl from "./styles/WorkFullView.module.scss";
-import LightBox from "../../Header/components/LightBox/LightBox";
+import LightBox from "../../LightBox/LightBox";
 import CloseButton from "../components/CloseButton/CloseButton";
 import WorksCarousel from "../components/WorksCarousel/WorksCarousel";
 import WorksDescription from "../components/WorksDescription/WorksDescription";
 import Image from "next/image";
 
 const WorkFullView = ({ fullViewOpened, changeFullViewOpened, artData }) => {
-  console.log(artData);
+  // console.log(artData);
   return (
     <div className={classNames(cl["fullview-container"])}>
       <div className={classNames(cl["works-carousel-container"])}>
@@ -17,11 +17,6 @@ const WorkFullView = ({ fullViewOpened, changeFullViewOpened, artData }) => {
       <div className={classNames(cl["works-description-container"])}>
         <WorksDescription />
       </div>
-      <LightBox
-        sectionOpened={fullViewOpened}
-        // clickHandler={changeFullViewOpened}
-      />
-      <CloseButton onClick={changeFullViewOpened} />
       {/* <div className={classNames(cl["fullview__content"])}>
         <div className={classNames(cl["artwork-container"])}>
           <Image

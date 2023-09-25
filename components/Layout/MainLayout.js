@@ -7,6 +7,7 @@ const MainLayout = ({ children, pageProps }) => {
   
   return (
     <>
+      <div id="modal-view"></div>
       {route !== "/_error" && <Header />}
       <main>{children}</main>
       {route !== "/_error" && <Footer pageProps={pageProps}/>}

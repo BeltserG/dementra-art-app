@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
         <title>{fullPageTitle}</title>
         <meta
           name="description"
-          content="Welcome to Dementra Art Gallery! 2D Art and Environmental Design, Oil Painting, Glass Art"
+          content="Welcome to Dementra Art Gallery! 2D Art & Environmental Design, Oil Painting, Glass Art"
         />
         <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
