@@ -4,12 +4,14 @@
   width: 100%;
   aspect-ratio: 4 / 3;
 //   height: 250px;
-  background-color: rgb(96, 25, 110);
-  border-radius: 0.25rem;
+  // background-color: rgb(96, 25, 110);
+  background: transparent;
+  border-radius: 0.35rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
   &:before {
+    z-index: 1;
     position: absolute;
     content: "";
     top: 0;
@@ -33,36 +35,54 @@
 //   }
   &:hover {
     &:before {
-      opacity: 0;
-      // transition: opacity 500ms ease;
+      opacity: .25;
     }
-    // &:after {
-    //   left: 110%;
-    //   transition: all 100ms ease;
-    // }
+
   }
   &:hover .artwork__preview-info{
-    opacity: .75;
+    opacity: 1;
     transform: translateY(0);
   }
 }
+.artwork__preview-image{
+  object-fit: cover;
+  // z-index: 0;
+}
+.preview-info__heading{
+  font-size: 1.5rem;
+}
+.preview-info__text{
+  font-size: 1rem;
+
+}
+
+
+
+
+
 .digital-gallery__artwork {
   position: relative;
   width: 100%;
 }
 .artwork__preview-info {
+  
   position: absolute;
   bottom: 0;
   left: 0;
   transform: translateY(20%);
   width: 100%;
   height: 80%;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 30% v.$p-big;
   background: linear-gradient(
     0deg,
     hsl(0, 0%, 0%),
-    hsla(0, 0%, 0%, 0.8),
-    hsla(0, 0%, 0%, 0.5),
-    hsla(0, 0%, 0%, 0.2),
+    hsla(0, 0%, 0%, 0.9),
+    hsla(0, 0%, 0%, 0.75),
+    hsla(0, 0%, 0%, 0.6),
     hsla(0, 0%, 0%, 0)
   );
   opacity: 0;

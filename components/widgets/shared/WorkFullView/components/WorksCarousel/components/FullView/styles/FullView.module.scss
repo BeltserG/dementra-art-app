@@ -1,0 +1,23 @@
+@use "/styles/Variables.scss" as v;
+
+.fullview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.fullview__works-container{
+    display: flex;
+    position: relative;
+    width: 100%;
+    // height: 50%;
+    // transform: translateX(calc(-200%));
+}
+.work-image{
+    // position: absolute;
+    // top:0;
+    // left:0;
+    // object-fit: scale-down;
+    // z-index: 15;
+    // border: 2px solid red;
+}

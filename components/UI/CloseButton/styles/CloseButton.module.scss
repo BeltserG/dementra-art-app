@@ -2,7 +2,7 @@
 
 .fullview__close-button {
     border: 0;
-    position: absolute;
+    position: fixed;
     top: v.$p-general;
     right: v.$p-general;
     z-index: 12;
@@ -10,6 +10,8 @@
     cursor: pointer;
     & svg {
       fill: rgb(214, 214, 214);
-      width: 2.5rem;
+      width: 2rem;
+      height: 2rem;
+      display: block;
     }
   }

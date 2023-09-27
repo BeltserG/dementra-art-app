@@ -15,8 +15,16 @@
   flex-direction: column;
 }
 .works-carousel-container {
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  padding: v.$p-general v.$p-big;
+  gap: 1rem;
 }
 .works-description-container {
+  flex:1;
+  display: flex;
+  flex-direction: column;
 }
 
 .fullview__content {
@@ -49,4 +57,10 @@
 .info--heading {
 }
 .info--text {
+}
+
+@media (min-width: 600px) {
+  .fullview-container{
+    flex-direction: row;
+  }
 }

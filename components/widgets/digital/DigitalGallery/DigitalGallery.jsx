@@ -6,7 +6,7 @@ import classNames from "classnames";
 const DigitalGallery = ({ data }) => {
   return (
     <div className={classNames(cl["digital-gallery"])}>
-      {data.works.map((artData) => (
+      {data.collections.map((artData) => (
         <ArtWork key={artData.id} artData={artData} />
       ))}
     </div>

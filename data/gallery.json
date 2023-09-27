@@ -13,30 +13,47 @@
   },
   {
     "id": "digital-art",
-    "works": [
+    "collections": [
       {
         "id":"1",
-        "name": "",
+        "name": "Corals",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":"/images/works/digital/Corals/Corals-1.png"
+        "works": [
+          {
+            "name": "Coral 1",
+            "description": "",
+            "url": "/images/works/digital/Corals/Corals-1.png"
+          },
+          {
+            "name": "Coral 2",
+            "description": "",
+            "url": "/images/works/digital/Corals/Corals-2.png"
+          },
+          {
+            "name": "Coral 3",
+            "description": "",
+            "url": "/images/works/digital/Corals/Corals-3.png"
+          }
+        ],
+        "thumbnail-image":"/images/works/digital/Corals/Corals-2.png"
       },
       {
         "id":"2",
-        "name": "",
+        "name": "ArtWork2",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":"/images/works/digital/Corals/Corals-1.png"
+        "thumbnail-image":"/images/works/digital/Corals/Corals-1.png"
       },
       {
         "id":"3",
-        "name": "",
+        "name": "ArtWork3",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":"/images/works/digital/Corals/Corals-1.png"
+        "thumbnail-image":"/images/works/digital/Corals/Corals-2.png"
       },
       {
         "id":"4",
-        "name": "",
+        "name": "ArtWork4",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "url":"/images/works/digital/Corals/Corals-1.png"
+        "thumbnail-image":"/images/works/digital/Corals/Corals-3.png"
       }
     ],
     "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
