@@ -10,13 +10,13 @@ import Image from "next/image";
 const WorkFullView = ({ fullViewOpened, changeFullViewOpened, artData }) => {
   // console.log(artData);
   return (
-    <div className={classNames(cl["fullview-container"])}>
+    <>
       <div className={classNames(cl["works-carousel-container"])}>
-        <WorksCarousel artData={artData}/>
+        <WorksCarousel artData={artData} changeFullViewOpened={changeFullViewOpened}/>
       </div>
-      <div className={classNames(cl["works-description-container"])}>
+      {/* <div className={classNames(cl["works-description-container"])}>
         <WorksDescription worksDescription={artData.description}/>
-      </div>
+      </div> */}
       {/* <div className={classNames(cl["fullview__content"])}>
         <div className={classNames(cl["artwork-container"])}>
           <Image
@@ -33,7 +33,7 @@ const WorkFullView = ({ fullViewOpened, changeFullViewOpened, artData }) => {
           <p className={classNames(cl["info-text"])}></p>
         </div>
       </div> */}
-    </div>
+    </>
   );
 };
 

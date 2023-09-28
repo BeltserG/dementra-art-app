@@ -8,11 +8,20 @@ import Thumbnails from "./components/Thumbnails/Thumbnails";
 import classNames from "classnames";
 import cl from "./styles/WorkScarousel.module.scss";
 
-const WorkScarousel = ({artData}) => {
+const WorkScarousel = ({ artData, changeFullViewOpened}) => {
+  const [workInView, setWorkInView] = useState(1);
   return (
     <>
-      <FullView artData={artData}/>
-      <Thumbnails artData={artData}/>
+      <FullView
+        artData={artData}
+        workInView={workInView}
+        setWorkInView={setWorkInView}
+      />
+      <Thumbnails
+        artData={artData}
+        workInView={workInView}
+        setWorkInView={setWorkInView}
+      />
     </>
   );
 };

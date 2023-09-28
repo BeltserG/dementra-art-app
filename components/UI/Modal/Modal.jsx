@@ -12,14 +12,25 @@ import cl from "./styles/Modal.module.scss";
 const Modal = ({ children, closeButtonOnClick }) => {
   let parent;
   if (typeof document !== "undefined") {
-    parent = document.querySelector("#modal-view");
+    parent = document.querySelector("#modal");
   }
+  const content = (
+    <div className={classNames(cl["modal-view"])}>
+      <LightBox sectionIsOpened={true} clickHandler={closeButtonOnClick} />
+      <CloseButton onClick={closeButtonOnClick} />
+      {children}
+    </div>
+  );
   return (
-    <>
-      {createPortal(<LightBox sectionIsOpened={true}/>, parent)}
-      {createPortal(<CloseButton onClick={closeButtonOnClick}/>, parent)}
-      {createPortal(children, parent)}
-    </>
+    // <div className={classNames(cl["modal-view"])}>
+    //   {createPortal(
+    //     <LightBox sectionIsOpened={true} clickHandler={closeButtonOnClick} />,
+    //     parent
+    //   )}
+    //   {createPortal(<CloseButton onClick={closeButtonOnClick} />, parent)}
+    //   {createPortal(children, parent)}
+    // </div>
+    <>{createPortal(content, parent)}</>
   );
 };
 

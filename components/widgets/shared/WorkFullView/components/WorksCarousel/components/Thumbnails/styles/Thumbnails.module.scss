@@ -1,1 +1,46 @@
 @use "/styles/Variables.scss" as v;
+
+.thumbnails-container {
+  --thumbnail-height: 6rem;
+  --thumbnail-padding: .5rem;
+  display: flex;
+  justify-content: center;
+  height: var(--thumbnail-height);
+//   background-color: rgba(41, 41, 117, 0.774);
+  border-radius: 0.35rem;
+  gap: 1.5rem;
+  padding: var(--thumbnail-padding);
+  // background-color: red;
+  // // flex: 1;
+}
+.thumbnail-wrapper {
+  width: calc(var(--thumbnail-height) - var(--thumbnail-padding)*2);
+  height: 100%;
+  background-color: rgba(0, 0, 0);
+  border-radius: .35rem;
+  overflow: hidden;
+  &:has(.current-work){
+    box-shadow: 0px 0px 5.7px rgba(255, 255, 255, 0.018),
+    0px 0px 10.4px rgba(255, 255, 255, 0.028),
+    0px 0px 14.3px rgba(255, 255, 255, 0.038),
+    0px 0px 16.8px rgba(255, 255, 255, 0.049),
+    0px 0px 20.7px rgba(255, 255, 255, 0.065),
+    0px 0px 36px rgba(255, 255, 255, 0.1);
+  }
+
+}
+.thumbnail-image {
+    filter: grayscale(100%);
+    opacity: .5;
+    cursor: pointer;
+    &.current-work{
+        filter: none;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 450px){
+    .thumbnails-container{
+        --thumbnail-height: 8rem;
+    }
+}

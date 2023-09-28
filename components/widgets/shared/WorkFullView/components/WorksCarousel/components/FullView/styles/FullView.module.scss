@@ -1,15 +1,11 @@
 @use "/styles/Variables.scss" as v;
 
-.fullview{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1;
-}
 .fullview__works-container{
     display: flex;
     position: relative;
+    z-index: 19;
     width: 100%;
+    flex: 1;
     overflow: hidden;
     // height: 50%;
     // transform: translateX(calc(-200%));
@@ -19,10 +15,23 @@
     0px 0px 19.8px rgba(255, 255, 255, 0.049),
     0px 0px 22.7px rgba(255, 255, 255, 0.065),
     0px 0px 48px rgba(255, 255, 255, 0.1);
+    border-radius: .35rem;
+    // background: transparent;
+
+}
+.work-image-wrapper{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(8, 15, 10);
+    transition: 250ms;
+    // object-fit: contain;
 }
 .work-image{
-    width: 100%;
-    transition: 250ms;
+    // width: 100%;
+    // object-position: 50% 50%;
     // position: absolute;
     // top:0;
     // left:0;

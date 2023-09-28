@@ -5,9 +5,10 @@
     position: fixed;
     top:0;
     left:0;
-    z-index: 8;
+    z-index: 9;
     visibility: hidden;
     cursor: auto;
+    backdrop-filter: blur(2px);
 }
 .lightbox.active{
     visibility: visible;
