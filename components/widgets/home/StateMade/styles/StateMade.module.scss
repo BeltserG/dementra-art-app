@@ -1,7 +1,7 @@
 @use "/styles/Variables.scss" as v;
 
 .state-made{
-    height: 100dvh;
+    // height: 100dvh;
     padding: v.$p-big;
     opacity:0;
     display: flex;
@@ -22,14 +22,28 @@
 .content__image-container{
     width: 100%;
     height: 250px;
-    background-color: rgb(59, 11, 87);
+    background-color: rgb(35, 8, 51);
+
 }
 .content__image{
 }
 .content__text-container{
-
+    flex: 1;
 }
 
 .content__text{
     text-align:justify;
+    font-family: "Taviraj", sans-serif;
+    font-weight: 300;
+    font-size: .85rem;
+}
+
+@media (min-width: 450px){
+    .state-made__content{
+        flex-direction: row;
+    }
+    .content__image-container{
+        width: 50%;
+        flex: 1;
+    }
 }

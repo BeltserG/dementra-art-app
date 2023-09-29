@@ -3,19 +3,19 @@
 .gallery{
     display: flex;
     flex-direction: column;
-    gap:2rem;
-    padding: v.$p-big;
+    gap:1rem;
+    padding: v.$p-general;
 }
 .gallery__heading{
     font-size: v.$fs-h2;
     text-align: center;
-    background-color: rgb(97, 81, 61);
+    // background-color: rgb(97, 81, 61);
 }
 .gallery__items-container{
     display: flex;
     flex-direction: column;
-    gap:2rem;
-    padding: v.$p-general;
+    gap:1rem;
+    // padding: v.$p-general;
 }
 .gallery *{
 }

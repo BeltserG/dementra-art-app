@@ -8,6 +8,7 @@ import { GalleryIsClickedContext } from "../../context/galleryIsClickedContext";
 
 const NavItem = ({ item, changeNavOpened }) => {
   const [windowWidth, setWindowWidth] = useState(0);
+  const [secondLayerisVisible, setSecondLayerIsVisible] = useState(false);
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, [])
@@ -28,10 +29,14 @@ const NavItem = ({ item, changeNavOpened }) => {
         className={classNames(cl["nav__link"], cl["gallery"])}
         key={item}
         
-        onMouseEnter={()=>setGalleryIsClicked(false)}
+        onMouseEnter={()=>{
+          setSecondLayerIsVisible(true);
+          setGalleryIsClicked(false)}}
+          onMouseLeave={()=>setSecondLayerIsVisible(false)}
       >
         <li key={item} className={cl["header__nav__list--item"]}>
           <NavigationSecond
+          isVisible={secondLayerisVisible}
           changeNavOpened={isMobile ? changeNavOpened : ()=>{}}
           />
           {item}

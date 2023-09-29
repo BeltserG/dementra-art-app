@@ -89,7 +89,12 @@
     backdrop-filter: blur(8px);
     
 }
-.gallery:hover .header__nav__list2{
+// .gallery:hover .header__nav__list2{
+//     visibility: visible;
+//     opacity: 1;
+//     top: 1rem;
+// }
+.nav__list2--hovered{
     visibility: visible;
     opacity: 1;
     top: 1rem;
@@ -150,8 +155,6 @@
 }
 
 @media (min-width: 600px){
-
-    
     .header__nav__list{
         --nav-font-base: 1.25rem;
         position: static;

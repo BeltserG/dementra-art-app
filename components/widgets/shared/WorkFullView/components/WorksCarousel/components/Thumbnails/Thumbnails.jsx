@@ -10,7 +10,7 @@ const Thumbnails = ({ artData, setWorkInView, workInView }) => {
   const works = artData.works.map((work, index) => {
     let current = workInView === index + 1;
     return (
-      <div onClick={()=>setWorkInView(index + 1)} className={classNames(cl["thumbnail-wrapper"])}>
+      <div key={index} onClick={()=>setWorkInView(index + 1)} className={classNames(cl["thumbnail-wrapper"])}>
         <Image
           className={classNames(cl["thumbnail-image"], current ? cl["current-work"] : "")}
           key={work.name}
