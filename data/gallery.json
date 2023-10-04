@@ -6,7 +6,7 @@
       {
         "id":"1",
         "name": "Corals",
-        "description": "lorem ipsum dolor sit amet, consectet lorem",
+        "description": " lorem ipsum dolor sit amet, consectet lorem",
         "works": [
           {
             "name": "Coral 1",
@@ -29,7 +29,7 @@
       {
         "id":"2",
         "name": "ArtWork2",
-        "description": "lorem ipsum dolor sit amet, consectet lorem",
+        "description": " lorem ipsum dolor sit amet, consectet lorem",
         "thumbnail-image":"/images/works/digital/Corals/Corals-1.png"
       },
       {
@@ -46,7 +46,7 @@
       }
     ],
     "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
-    "thumbnail": "url"
+    "thumbnail": "/images/works/digital/Corals/Corals-2.png"
   },
   {
     "id": "oil-painting",
@@ -58,7 +58,7 @@
       }
     ],
     "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
-    "thumbnail": "url"
+    "thumbnail": "/images/works/digital/Corals/Corals-2.png"
   },
   {
     "id": "glass-art",
@@ -70,6 +70,6 @@
       }
     ],
     "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
-    "thumbnail": "url"
+    "thumbnail": "/images/works/digital/Corals/Corals-2.png"
   }
 ]

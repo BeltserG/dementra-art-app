@@ -3,28 +3,91 @@
 .gallery__item {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  align-items: center;
   // background-color: rgb(97, 81, 61);
-  padding: v.$p-general;
+}
+.gallery__item a{
+  width: 100%;
 }
 .gallery__item--heading {
-  font-size: v.$fs-h3;
+  // font-size: v.$fs-h3;
   text-align: center;
   text-transform: capitalize;
 }
+.gallery__item--image-container {
+  width: 80%;
+  height: 60vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0.3px 0.3px 1px -1px rgba(255, 255, 255, 0.023),
+  0.9px 0.9px 2.6px -1px rgba(255, 255, 255, 0.032),
+  1.8px 1.8px 5.3px -1px rgba(255, 255, 255, 0.037),
+  3.7px 3.7px 11px -1px rgba(255, 255, 255, 0.045),
+  10px 10px 30px -1px rgba(255, 255, 255, 0.07);
+  border-radius: 0.35rem;
+}
+.gallery__item--info-container{
+
+}
 .gallery__item--image {
-  width: 100%;
-  height: 50dvw;
+  // width: 100%;
+  // height: 50dvw;
   background-color: rgb(35, 8, 51);
   border-radius: 0.35rem;
-  box-shadow: 0.3px 0.3px 1px -1px rgba(255,255,255, 0.023),
-    0.9px 0.9px 2.6px -1px rgba(255,255,255, 0.032),
-    1.8px 1.8px 5.3px -1px rgba(255,255,255, 0.037),
-    3.7px 3.7px 11px -1px rgba(255,255,255, 0.045),
-    10px 10px 30px -1px rgba(255,255,255, 0.07);
+  scale: 1.1;
+  transition: all v.$tr-fast;
+}
+.gallery__item--image:hover {
+  scale: 1.25;
 }
 
 .gallery__item--text {
-  font-size: 0.85rem;
+  // font-size: 0.85rem;
   font-weight: 500;
+  text-align: center;
 }
+
+@media (min-width: 600px) {
+  .gallery__item{
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .gallery__item:nth-child(even) .gallery__item--image-container{
+    order: 2;
+  }
+  .gallery__item--image-container{
+    width: 48%;
+    height: 35vw;
+  }
+  .gallery__item--info-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    // align-self: baseline;
+    flex: 1;
+  }
+}
+@media (min-width: 600px) {
+  .gallery__item{
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .gallery__item:nth-child(even) .gallery__item--image-container{
+    order: 2;
+  }
+  .gallery__item--image-container{
+    width: 40%;
+    height: 35vw;
+  }
+  .gallery__item--info-container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    // align-self: baseline;
+    flex: 1;
+  }
+}
+

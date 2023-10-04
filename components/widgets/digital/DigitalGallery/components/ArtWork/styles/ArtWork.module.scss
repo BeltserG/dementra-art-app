@@ -3,7 +3,7 @@
 .digital-gallery__artwork-container {
   width: 100%;
   aspect-ratio: 4 / 3;
-//   height: 250px;
+  //   height: 250px;
   // background-color: rgb(96, 25, 110);
   background: transparent;
   border-radius: 0.35rem;
@@ -16,66 +16,65 @@
     content: "";
     top: 0;
     left: 0;
-    background: linear-gradient(110deg, rgba(207, 207, 207, 0.7), #fff0 20%, #fff0 70%, rgba(207, 207, 207, 0.7));
+    background: linear-gradient(
+      110deg,
+      rgba(207, 207, 207, 0.7),
+      #fff0 20%,
+      #fff0 70%,
+      rgba(207, 207, 207, 0.7)
+    );
     width: 100%;
     height: 100%;
     opacity: 1;
     transition: opacity 500ms ease 0s;
   }
-//   &:after {
-//     position: absolute;
-//     content: "";
-//     top: 0;
-//     bottom: 0;
-//     left: -100%;
-//     box-shadow: 0 0 10px 20px;
-//     backdrop-filter: blur(10px);
-//     opacity: 0.15;
-//     transform: skew(-20deg);
-//   }
+  //   &:after {
+  //     position: absolute;
+  //     content: "";
+  //     top: 0;
+  //     bottom: 0;
+  //     left: -100%;
+  //     box-shadow: 0 0 10px 20px;
+  //     backdrop-filter: blur(10px);
+  //     opacity: 0.15;
+  //     transform: skew(-20deg);
+  //   }
   &:hover {
     &:before {
-      opacity: .25;
+      opacity: 0.25;
     }
-
   }
-  &:hover .artwork__preview-info{
+  &:hover .artwork__preview-info {
     opacity: 1;
     transform: translateY(0);
   }
 }
-.artwork__preview-image{
+.artwork__preview-image {
   object-fit: cover;
   // z-index: 0;
 }
-.preview-info__heading{
+.preview-info__heading {
   font-size: 1.5rem;
 }
-.preview-info__text{
+.preview-info__text {
   font-size: 1rem;
-
 }
-
-
-
-
 
 .digital-gallery__artwork {
   position: relative;
   width: 100%;
 }
 .artwork__preview-info {
-  
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translateY(20%);
+  // transform: translateY(20%);
   width: 100%;
   height: 80%;
 
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: 0.5rem;
   padding: 30% v.$p-big;
   background: linear-gradient(
     0deg,
@@ -85,9 +84,19 @@
     hsla(0, 0%, 0%, 0.6),
     hsla(0, 0%, 0%, 0)
   );
-  opacity: 0;
+  // opacity: 0;
   transition: all 350ms;
   &:hover {
+  }
+}
 
+@media (min-width: 900px) {
+  .artwork__preview-info {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  .digital-gallery__artwork-container:hover .artwork__preview-info {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -28,10 +28,15 @@
 }
 .logo--email {
 }
+.logo--email p{
+  font-family: v.$ff-soria;
+  letter-spacing: .05rem;
+}
 .logo--email span {
   display: block;
   margin-top: .5rem;
   font-size: 0.75rem;
+  font-family: v.$ff-taviraj;
 }
 .footer-info__sections {
     display: flex;

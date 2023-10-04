@@ -6,19 +6,25 @@ $veryDarkBlueLightMode:hsl(200, 15%, 8%);
 $darkGray: #858585;
 $veryLightGray:hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
-//Font-familt:
+//Font-family:
 
 $ff-soria: "Soria", sans-sefif;
 $ff-droid: "Droid", sans-serif;
+$ff-taviraj: "Taviraj", sans-serif;
 //Font-size
 
 $fs-primary: 14px;
 $fs-secondary: 16px;
+$fs-h1: 3rem;
 $fs-h2: 2.25rem;
 $fs-h3: 1.5rem;
+$fs-h4: 1.25rem;
+$fs-h5: 1rem;
+$fs-par-general: 1rem;
 
 $ff-nunito: 'Nunito Sans', sans-serif;
-
+$max-vh: 1080px;
+$max-vw: 1920px;
 //Shadow
 $smallShadow:
 0px 1px 2.6px -8px rgba(0, 0, 0, 0.08),
