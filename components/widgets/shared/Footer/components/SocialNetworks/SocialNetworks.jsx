@@ -4,7 +4,7 @@ import classNames from "classnames";
 const SocialNetworks = ({socialNetworks}) => {
   return (
     <div className={classNames(cl["footer-info__social-networks"])}>
-      <h4 className={classNames(cl["social-networks--heading"])}>Follow</h4>
+      <h5 className={classNames(cl["social-networks--heading"])}>Follow</h5>
       <ul className={classNames(cl["social-networks--list"])}>
         {socialNetworks.map((network)=>
         <a key={network.id + "-link"} href={network.url} target="_blank">

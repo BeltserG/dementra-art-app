@@ -10,7 +10,7 @@ const Menu = () => {
   ];
   return (
     <div className={classNames(cl["footer-info__sections"])}>
-      <h4 className={classNames(cl["sections--heading"])}>Sections</h4>
+      <h5 className={classNames(cl["sections--heading"])}>Sections</h5>
       <ul className={classNames(cl["sections--list"])}>
         {sectionsList.map((section) => (
           <a key={section + "-link"} href={"/" + section}>

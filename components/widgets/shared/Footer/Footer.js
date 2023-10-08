@@ -11,7 +11,8 @@ const Footer = ({pageProps}) => {
     <footer className={classNames(cl["footer"])}>
       <div className={classNames(cl["footer-info-container"])}>
         <Logo />
-        <Menu />
+        {/* <div className={classNames(cl["footer"])}></div> */}
+        {/* <Menu /> */}
         <SocialNetworks socialNetworks={socialNetworks}/>
       </div>
       <div className={classNames(cl["footer-copyright-container"])}>
