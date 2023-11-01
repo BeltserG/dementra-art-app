@@ -9,12 +9,13 @@ const Footer = ({pageProps}) => {
   const {socialNetworks} = pageProps;
   return (
     <footer className={classNames(cl["footer"])}>
-      <div className={classNames(cl["footer-info-container"])}>
+      {/* <div className={classNames(cl["footer-info-container"])}> */}
         <Logo />
-        {/* <div className={classNames(cl["footer"])}></div> */}
-        {/* <Menu /> */}
+        
+        <Menu />
         <SocialNetworks socialNetworks={socialNetworks}/>
-      </div>
+        
+      {/* </div> */}
       <div className={classNames(cl["footer-copyright-container"])}>
         <Copyright />
       </div>

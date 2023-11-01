@@ -6,10 +6,10 @@ const Logo = () => {
       <div className={classNames(cl["footer__logo"])}>
         <img className={classNames(cl["logo--image"])} src="" alt="logo" />
       </div>
-      <div className={classNames(cl["footer__email"])}>
+      {/* <div className={classNames(cl["footer__email"])}>
         <h5>Contact:</h5>
         <address>dementra@gmail.com</address>
-      </div>
+      </div> */}
     </>
   );
 };
