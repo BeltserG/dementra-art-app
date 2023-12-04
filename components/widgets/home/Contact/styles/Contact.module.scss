@@ -1,0 +1,13 @@
+@use "@/styles/Variables.scss" as v;
+
+.contact{
+    border:0;
+    position: relative;
+    padding: v.$p-big;
+    // border:1px solid blue;
+    // height: 200%;
+    background-image: url("/images/contact/back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}

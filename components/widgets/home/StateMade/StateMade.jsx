@@ -3,17 +3,16 @@ import classNames from "classnames";
 import { stateMadeScrollAnimation } from "./anim/stateMadeScroll";
 import { useEffect } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 const StateMade = ({ biography }) => {
   useEffect(() => {
     stateMadeScrollAnimation(cl["state-made"]);
   }, []);
   return (
-    <section className={classNames(cl["state-made"])}>
+    <section id="biography" className={classNames(cl["state-made"])}>
       <h2 className={classNames(cl["state-made__heading"])}>
         {biography.heading}
       </h2>
-      <div className={classNames(cl["heading__underline"])}>
+      {/* <div className={classNames(cl["heading__underline"])}>
         <svg
           viewBox="0 0 380 28"
           shapeRendering="geometricPrecision"
@@ -28,15 +27,15 @@ const StateMade = ({ biography }) => {
             strokeWidth="3.84"
           />
         </svg>
-      </div>
+      </div> */}
       <div className={classNames(cl["state-made__content"])}>
-        <div className={classNames(cl["content__image-container"])}>
+        {/* <div className={classNames(cl["content__image-container"])}>
           <img
             className={classNames(cl["content__image"])}
             src=""
             alt="portrait"
           />
-        </div>
+        </div> */}
         <div className={classNames(cl["content__text-container"])}>
           <p className={classNames(cl["content__text"])}>
             {"\t" + biography.description}

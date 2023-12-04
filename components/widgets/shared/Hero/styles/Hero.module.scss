@@ -7,13 +7,20 @@
     position: relative;
     width: 100%;
     z-index:-1;
-    background-image: url("/images/hero_images/forest.png");
-    background-position: top center;
-    padding: v.$p-big;
+    // background-image: url("/images/hero_images/night_image_green.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: top center;
+    // padding: v.$p-big;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+.hero-background{
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
 }
 .hero__heading{
     // font-size: 3rem;

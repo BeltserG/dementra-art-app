@@ -9,7 +9,6 @@ const GalleryCard = ({ data }) => {
     window.innerWidth < 600 ? setIsSmallScreen(true) : setIsSmallScreen(false);
   }, []);
 
-  console.log(data);
 
   return (
     <div className={classNames(cl["gallery__item"])}>

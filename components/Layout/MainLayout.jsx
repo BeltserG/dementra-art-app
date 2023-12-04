@@ -4,13 +4,18 @@ import { useRouter } from "next/router";
 
 const MainLayout = ({ children, pageProps }) => {
   const {route} = useRouter();
-  
+  let isError = false;
+  if(route === "/_error" || route === "/404"){
+    isError = true
+  }
+  console.log(route)
+  console.log(isError)
   return (
     <>
       <div id="modal"></div>
-      {route !== "/_error" && <Header />}
+      {!isError && <Header />}
       <main>{children}</main>
-      {route !== "/_error" && <Footer pageProps={pageProps}/>}
+      {!isError && <Footer pageProps={pageProps}/>}
     </>
   );
 };

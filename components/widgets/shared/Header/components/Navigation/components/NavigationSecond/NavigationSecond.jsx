@@ -9,10 +9,7 @@ const NavigationSecond = ({ changeNavOpened, setSectionIsClicked, isVisible}) =>
     GalleryIsClickedContext
   );
   const galleryRef = useRef();
-  useEffect(()=>{
-    console.log(galleryRef)
-  })
-  const navListSecond = ["digital-art", "oil-painting", "glass-art"];
+  const navListSecond = ["digital-art"];
   return (
     <ul
       ref={galleryRef}

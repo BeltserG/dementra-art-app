@@ -1,28 +1,30 @@
 import Hero from "@/components/widgets/shared/Hero/Hero";
 import HomeGallerySection from "@/components/widgets/home/HomeGallerySection/HomeGallerySection";
 import StateMade from "@/components/widgets/home/StateMade/StateMade";
+import Contact from "@/components/widgets/home/Contact/Contact";
+import { useState } from "react";
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
-// import { getPathString } from "@/helpers/strings/getPathString";
 const Mainpage = (props) => {
+  const content = <> </>;
   return (
     <>
       <Hero />
-      <StateMade biography={props.biography}/>
-      <HomeGallerySection gallery={props.gallery}/>
+      <StateMade biography={props.biography} />
+      {/* <HomeGallerySection gallery={props.gallery}/> */}
+      <Contact />
     </>
   );
 };
 
-
-
-export async function getStaticProps(context){
+export async function getStaticProps(context) {
   const dataNames = ["socialNetworks", "gallery", "biography"];
   const data = getStaticPropsFromJSON(dataNames);
+  console.log(data)
   return {
-    props:{
-      ...data
-    }
-  }
+    props: {
+      ...data,
+    },
+  };
 }
 
 export default Mainpage;

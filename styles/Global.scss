@@ -16,7 +16,7 @@ html {
   font-family: v.$ff-taviraj;
   font-weight: 300;
   line-height: 1.25rem;
-  background-color: rgb(12, 12, 12);
+  background-color: v.$veryDarkBlue;
   letter-spacing: 0rem;
   max-width: none;
 
@@ -67,7 +67,7 @@ h4,
 h5,
 h6 {
   font-family: v.$ff-taviraj;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.14rem;
   line-height: normal;
 }
 h1{
@@ -88,6 +88,7 @@ h5{
 p{
   font-size: v.$fs-par-general;
   line-height: 1.5rem;
+  font-family: v.$ff-droid;
 }
 
 

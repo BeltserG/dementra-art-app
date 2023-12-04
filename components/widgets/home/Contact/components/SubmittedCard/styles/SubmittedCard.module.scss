@@ -1,0 +1,109 @@
+@use "@/styles/Variables.scss" as v;
+
+// Colors
+$green: rgb(19, 77, 38);
+$white: #fff;
+
+// Misc
+$curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+
+.submit-card{
+    // border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2cqmin;
+    padding: 5cqmin;
+}
+.submit-heading{}
+.submit-message{
+    font-size: 3.75cqmin;
+}
+.submit-redirect{
+    border-radius: 1em;
+    padding: 0.3em .6em;
+    // font-family: v.$ff-roboto-flex;
+    font-weight: 500;
+    outline: 0;
+    border:0;
+    // background-color: v.$clr-greyish;
+    font-size: 1em;
+    // color: v.$clr-white;
+    transition: 150ms;
+    cursor: pointer;
+    opacity: 0.75;
+    &:focus,&:hover,&:active{
+        opacity: 0.5;
+    }
+
+}
+
+.checkmark {
+    width: 15cqmin;
+    // width: 56px;
+    // height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: $white;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px $green;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+  }
+  
+  .checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: $green;
+    fill: none;
+    animation: stroke .6s $curve forwards;
+  }
+  
+  .checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke .3s $curve .8s forwards;
+  }
+  
+  @keyframes stroke {
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  @keyframes scale {
+    0%, 100% {
+      transform: none;
+    }
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+  
+  @keyframes fill {
+    100% {
+      box-shadow: inset 0px 0px 0px 1000px $green;
+    }
+  }
+
+@media (aspect-ratio > 9/17) {
+
+}
+@media (aspect-ratio > 9/14) {
+
+}
+@media (aspect-ratio > 10/12) {
+
+}
+@media (aspect-ratio > 13/9) {
+
+}
+@media (aspect-ratio > 16/9) {
+
+}

@@ -3,6 +3,7 @@
 $darkBlue: hsl(209, 23%, 22%);
 $veryDarkBlueDarkMode:hsl(207, 26%, 17%);
 $veryDarkBlueLightMode:hsl(200, 15%, 8%);
+$veryDarkBlue: hsl(213, 100%, 6%);
 $darkGray: #858585;
 $veryLightGray:hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
@@ -72,30 +73,30 @@ $tr-fast: 200ms;
 
 }
 
-@font-face {
-  font-family: 'Droid';
-  src:
-       url('/fonts/droid/DroidSerif-Bold-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+// @font-face {
+//   font-family: 'Droid';
+//   src:
+//        url('/fonts/droid/DroidSerif-Bold-webfont.woff') format('woff');
+//   font-weight: bold;
+//   font-style: normal;
 
-}
+// }
 
-@font-face {
-  font-family: 'Droid';
-  src:
-       url('/fonts/droid/DroidSerif-Italic-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
+// @font-face {
+//   font-family: 'Droid';
+//   src:
+//        url('/fonts/droid/DroidSerif-Italic-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: italic;
+// }
 
-@font-face {
-  font-family: 'Droid';
-  src:
-       url('/fonts/droid/DroidSerif-BoldItalic-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
+// @font-face {
+//   font-family: 'Droid';
+//   src:
+//        url('/fonts/droid/DroidSerif-BoldItalic-webfont.woff') format('woff');
+//   font-weight: bold;
+//   font-style: italic;
+// }
 
 @font-face {
   font-family: 'Taviraj';

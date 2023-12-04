@@ -1,0 +1,88 @@
+@use "@/styles/Variables.scss" as v;
+
+.form-container {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid red;
+}
+.form-interactive-container {
+  // border: 1px solid blue;
+  width: 100%;
+  height: 132cqmin;
+}
+.form-heading {
+  font-size: 7.2cqmin;
+  // border: 1px solid rgb(255, 166, 0);
+  line-height: 11cqmin;
+  //   transform: translateX(1cqmin);
+}
+.form-heading span {
+  // color: v.$clr-purple;
+}
+.form-text {
+  //   font-weight: bold;
+  line-height: 5cqmin;
+  font-size: 3cqmin;
+  text-align: center;
+  color: v.$darkGray;
+}
+.form-text a {
+  color: v.$white;
+  opacity: 0.75;
+  font-size: 0.9em;
+  transition: v.$tr-fast;
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+@media (aspect-ratio > 9/17) {
+  .form-interactive-container {
+    height: 100cqmin;
+  }
+}
+@media (aspect-ratio > 9/14) {
+  .form-interactive-container {
+    height: 77cqmin;
+  }
+
+}
+@media (aspect-ratio > 10/12) {
+  .form-interactive-container {
+    height: 61.3cqmin;
+  }
+
+  .form-container {
+    align-items: flex-start;
+    width: 80%;
+  }
+  .form-text {
+    line-height: 4cqmin;
+    font-size: 2.75cqmin;
+    text-align: left;
+    // color: v.$clr-purple;
+  }
+}
+@media (aspect-ratio > 13/9) {
+  .form-interactive-container {
+  }
+  .form-container {
+    align-items: flex-start;
+    width: 50%;
+  }
+  .form-text {
+    line-height: 5cqmin;
+    font-size: 2.7cqmin;
+    // color: v.$clr-purple;
+  }
+  .form-heading {
+    font-size: 7.85cqmin;
+  }
+}
+@media (aspect-ratio > 16/9) {
+  .form-interactive-container {
+  }
+}

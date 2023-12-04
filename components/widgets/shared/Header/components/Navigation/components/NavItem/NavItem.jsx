@@ -1,8 +1,8 @@
-import { useEffect, useState, useContext} from "react";
+import { useEffect, useState, useContext } from "react";
 import Link from "next/link";
 import cl from "@/components/widgets/shared/Header/styles/Header.module.scss";
 import classNames from "classnames";
-import { useRouter} from "next/router";
+import { useRouter } from "next/router";
 import NavigationSecond from "../NavigationSecond/NavigationSecond";
 import { GalleryIsClickedContext } from "../../context/galleryIsClickedContext";
 
@@ -11,7 +11,7 @@ const NavItem = ({ item, changeNavOpened }) => {
   const [secondLayerisVisible, setSecondLayerIsVisible] = useState(false);
   useEffect(() => {
     setWindowWidth(window.innerWidth);
-  }, [])
+  }, []);
   const isMobile = windowWidth < 600;
 
   let route = useRouter().pathname;
@@ -21,27 +21,34 @@ const NavItem = ({ item, changeNavOpened }) => {
   }
   const underline = route === item ? cl["underlined"] : "";
 
-  const {setGalleryIsClicked} = useContext(GalleryIsClickedContext);
+  const { setGalleryIsClicked } = useContext(GalleryIsClickedContext);
 
   if (item === "gallery") {
     return (
-      <div
-        className={classNames(cl["nav__link"], cl["gallery"])}
-        key={item}
-        
-        onMouseEnter={()=>{
-          setSecondLayerIsVisible(true);
-          setGalleryIsClicked(false)}}
-          onMouseLeave={()=>setSecondLayerIsVisible(false)}
-      >
-        <li key={item} className={cl["header__nav__list--item"]}>
-          <NavigationSecond
-          isVisible={secondLayerisVisible}
-          changeNavOpened={isMobile ? changeNavOpened : ()=>{}}
-          />
-          {item}
-        </li>
-      </div>
+      // <Link
+      //   className={classNames(cl["nav__link"])}
+      //   key={item}
+      //   href={getRoute(item)}
+      //   onClick={isMobile ? changeNavOpened : () => {}}
+      // >
+        <div
+          className={classNames(cl["nav__link"], cl["gallery"])}
+          key={item}
+          onMouseEnter={() => {
+            setSecondLayerIsVisible(true);
+            setGalleryIsClicked(false);
+          }}
+          onMouseLeave={() => setSecondLayerIsVisible(false)}
+        >
+          <li key={item} className={cl["header__nav__list--item"]}>
+            <NavigationSecond
+              isVisible={secondLayerisVisible}
+              changeNavOpened={isMobile ? changeNavOpened : () => {}}
+            />
+            {item}
+          </li>
+        </div>
+      // {/* </Link> */}
     );
   }
   return (
@@ -49,7 +56,7 @@ const NavItem = ({ item, changeNavOpened }) => {
       className={classNames(cl["nav__link"])}
       key={item}
       href={getRoute(item)}
-      onClick={isMobile ? changeNavOpened : ()=>{}}
+      onClick={isMobile ? changeNavOpened : () => {}}
     >
       <li
         key={item}
@@ -62,7 +69,7 @@ const NavItem = ({ item, changeNavOpened }) => {
 };
 
 function getRoute(item) {
-  return item === "home" ? "/" : "/" + item;
+  return item === "home" ? "/" : "/#" + item;
 }
 
 export default NavItem;

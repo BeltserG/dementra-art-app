@@ -9,8 +9,8 @@ import cl from "@/components/widgets/shared/Header/styles/Header.module.scss";
 import { navScrollAnimation } from "../../anim/navScrollAnimation.js";
 
 const Navigation = () => {
-  const list = ["home", "gallery", "biography", "contacts"];
-
+  const list = ["home",  "biography", "gallery", "contact"];
+  const baseUrl = "http://wwww.dementra.art/";
   useEffect(() => {
     if (window.innerWidth > 600) {
       navScrollAnimation(cl["header__nav"]);
