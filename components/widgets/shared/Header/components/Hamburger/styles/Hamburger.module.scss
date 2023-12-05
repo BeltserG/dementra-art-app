@@ -4,7 +4,7 @@
     z-index:10;
     background: transparent;
     padding: 0;
-    width: 2rem;
+    width: 2.5rem;
     border:0;
     cursor: pointer;
     position: relative;
@@ -48,7 +48,11 @@
 .mob-nav-button.opened .middle{
     opacity:0;
 }
-
+@media (min-width: 450px){
+    .mob-nav-button{
+        width:3rem;
+    }
+}
 @media (min-width: 600px){
     .mob-nav-button{
         display: none;

@@ -16,7 +16,7 @@ $ff-taviraj: "Taviraj", sans-serif;
 
 $fs-primary: 14px;
 $fs-secondary: 16px;
-$fs-h1: 3rem;
+$fs-h1: 2.75rem;
 $fs-h2: 2.25rem;
 $fs-h3: 1.5rem;
 $fs-h4: 1.25rem;
@@ -44,6 +44,9 @@ $p-big: 2rem;
 //Time
 
 $tr-fast: 200ms;
+
+//Parallax values
+$transform-value: -12rem;
 
 @mixin button{
     text-transform: capitalize;

@@ -11,7 +11,7 @@
     // background-size: cover;
     // background-repeat: no-repeat;
     // background-position: top center;
-    // padding: v.$p-big;
+    padding: v.$p-big;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,31 @@
 .hero-background{
     position: absolute;
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
+    &.sky{
+        position: absolute;
+    }
+    &.clouds{
+        position: absolute;
+    }
+    &.mountains{
+        position: absolute;
+    }
+    &.wind{
+        position: absolute;
+    }
+    &.fog1{
+        position: absolute;
+    }
+    &.water{
+        position: absolute;
+    }
+    &.fog2{
+        position: absolute;
+    }
+    &.trees{
+        position: absolute;
+    }
 }
 .hero__heading{
     // font-size: 3rem;

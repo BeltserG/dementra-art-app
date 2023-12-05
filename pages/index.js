@@ -19,7 +19,6 @@ const Mainpage = (props) => {
 export async function getStaticProps(context) {
   const dataNames = ["socialNetworks", "gallery", "biography"];
   const data = getStaticPropsFromJSON(dataNames);
-  console.log(data)
   return {
     props: {
       ...data,

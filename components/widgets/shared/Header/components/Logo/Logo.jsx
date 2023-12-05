@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Logo = () => {
   useEffect(() => {
-    logoScrollAnimation(classes["logo-container"], classes["logo-container"]);
+    logoScrollAnimation(classes["logo-container"]);
   }, []);
 
   // logoScroll(classes["logo-container"]);

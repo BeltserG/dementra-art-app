@@ -1,81 +1,164 @@
 @use "/styles/Variables.scss" as v;
 
-.state-made{
-    // height: 100dvh;
-    --fs-statemade-base: 1rem;
-    padding: v.$p-big;
-    opacity:0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1rem;
-    background-image: url("/images/statemade_images/back.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
-    height: 100dvh;
+.statemade {
+  // height: 100dvh;
+  --transform-value: -5rem;
+  --fs-statemade-base: 1rem;
+  padding: v.$p-big;
+  position: relative;
+  transform: translateY(v.$transform-value);
+  // opacity:0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  // background-image: url("/images/statemade_images/back.png");
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  height: calc(100dvh - v.$transform-value);
+}
+.statemade-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+.gem-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  // border: 1px solid red;
+  position: relative;
+}
+.statemade-gem {
+  width: auto;
+}
+.sparkles {
+  position: absolute;
+  // border: 1px solid orange;
+  width: 100%;
+  height: 100%;
+  container-type: size;
+}
+.sparkle-container {
+  position: absolute;
+  &.small {
+    width: 5cqmin;
+    &.first {
+      top: 25cqmin;
+      left: 20cqmin;
+    }
+    &.second {
+      top: 90cqmin;
+      left: 10cqmin;
+    }
+    &.third {
+      top: 112cqmin;
+      left: 50cqmin;
+    }
+  }
+  &.medium {
+    width: 10cqmin;
+    &.first {
+      width: 5cqmin;
+      top: 42cqmin;
+      left: 75cqmin;
+    }
+    &.second {
+      width: 5cqmin;
+      top: 87cqmin;
+      left: 82cqmin;
+    }
+    &.third {
+      width: 12cqmin;
+      top: 65cqmin;
+      left: 85cqmin;
+    }
+  }
+  &.large {
+    width: 15cqmin;
+    &.first {
+      top: 3cqmin;
+      left: 55cqmin;
+    }
+    &.second {
+      top: 52cqmin;
+      left: 8cqmin;
+    }
+    &.third {
+      top: 98cqmin;
+      left: 10cqmin;
+    }
+  }
+}
+.sparkle {
+  // position: absolute;
 }
 
-.state-made__heading{
+.state-made__heading {
+  // width: 50%;
+  text-align: center;
+  // border: 1px solid red;
+  // text-decoration: underline;
+  // font-size: v.$fs-h2;
+}
+.state-made__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // width: 50%;
+  gap: 1rem;
+}
+
+.content__text {
+  text-align: justify;
+  font-family: "Taviraj", sans-serif;
+  // font-size: calc(var(--fs-statemade-base)*.9);
+}
+
+@media (min-width: 600px) {
+  .statemade {
+    padding: calc(v.$p-big * 1.5);
+  }
+  .gem-container {
     width: 50%;
-    text-align: center;
     // border: 1px solid red;
-    // text-decoration: underline;
-    // font-size: v.$fs-h2;
+    position: relative;
+  }
 }
-.heading__underline{
-    width: 80%;
-    align-self: center;
-}
-.state-made__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media (min-width: 750px) {
+  .statemade {
+    padding: calc(v.$p-big * 2);
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .state-made__content {
     width: 50%;
-    gap: 3rem;
-}
-.content__image-container{
-    width: 80%;
-    aspect-ratio: 1/1;
-    background-color: rgb(31, 7, 44);
-    scale: .75;
-    border-radius: 0.35rem;
-
-}
-.content__image{
-}
-.content__text-container{
-    flex: 1;
+    order: 2;
+    gap: 2rem;
+  }
+  .gem-container {
+    width: 40%;
+  }
 }
 
-.content__text{
-    text-align:justify;
-    font-family: "Taviraj", sans-serif;
-    // font-size: calc(var(--fs-statemade-base)*.9);
-}
-
-@media (min-width: 600px){
-    .state-made{
-        padding: calc(v.$p-big*1.5);
-    }
-    .state-made__content{
-        flex-direction: row;
-    }
-    .content__image-container{
-        width: 50%;
-    // aspect-ratio: 1/1;
-    }
-}
-@media (min-width: 900px){
-    .state-made{
-        padding: calc(v.$p-big*2);
-    }
-    .state-made__content{
-        flex-direction: row;
-        gap: 4rem;
-    }
-    .content__image-container{
-        width: 40%;
-    // aspect-ratio: 1/1;
-    }
+@media (min-width: 1100px) {
+  .statemade {
+    padding: calc(v.$p-big * 2);
+    flex-direction: row;
+    gap: 6rem;
+  }
+  .state-made__content {
+    width: 50%;
+    order: 2;
+    gap: 2rem;
+  }
+  .gem-container {
+    width: 25%;
+  }
 }

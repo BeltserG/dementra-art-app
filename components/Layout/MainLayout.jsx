@@ -8,8 +8,6 @@ const MainLayout = ({ children, pageProps }) => {
   if(route === "/_error" || route === "/404"){
     isError = true
   }
-  console.log(route)
-  console.log(isError)
   return (
     <>
       <div id="modal"></div>

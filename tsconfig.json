@@ -24,7 +24,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/widgets/shared/Hero/anim/heroAnimation.js"  ],
   "exclude": [
     "node_modules"
   ]
