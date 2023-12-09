@@ -27,9 +27,9 @@ const NavigationSecond = ({ changeNavOpened, setSectionIsClicked, isVisible}) =>
       //   setGalleryIsClicked(true);
       // }}
     >
-      {navListSecond.map((item) => (
+      {/* {navListSecond.map((item) => (
         <NavItem2 key={item} item={item} />
-      ))}
+      ))} */}
     </ul>
   );
 };

@@ -5,7 +5,6 @@ import Contact from "@/components/widgets/home/Contact/Contact";
 import { useState } from "react";
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
 const Mainpage = (props) => {
-  const content = <> </>;
   return (
     <>
       <Hero />
