@@ -6,7 +6,7 @@ import FullView from "./components/FullView/FullView";
 import Thumbnails from "./components/Thumbnails/Thumbnails";
 
 import classNames from "classnames";
-import cl from "./styles/WorkScarousel.module.scss";
+import cl from "./styles/WorksCarousel.module.scss";
 
 const WorkScarousel = ({ artData, changeFullViewOpened}) => {
   const [workInView, setWorkInView] = useState(1);

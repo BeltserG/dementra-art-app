@@ -9,9 +9,9 @@ const Mainpage = (props) => {
   return (
     <>
       <Hero />
-      <StateMade biography={props.biography} />
+      {/* <StateMade biography={props.biography} /> */}
       {/* <HomeGallerySection gallery={props.gallery}/> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 };
