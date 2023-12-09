@@ -12,7 +12,7 @@ const Error_Page = () => {
       <div className={classNames(cl["error-container"])}>
         <Image
           className={classNames(cl["gallery__item--image"])}
-          src={"/images/404_otter.jpg"}
+          src={"/images/404_Otter.jpg"}
           alt={"sad_otter"}
           priority={true}
           width="0"
