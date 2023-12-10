@@ -43,6 +43,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["clouds"])}
@@ -56,6 +57,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["mountains"])}
@@ -69,6 +71,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["wind"])}
@@ -82,6 +85,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["fog1"])}
@@ -95,6 +99,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["water"])}
@@ -108,6 +113,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["fog2"])}
@@ -121,6 +127,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <Image
         className={classNames(cl["hero-background"], cl["trees"])}
@@ -134,6 +141,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
         }}
+        priority
       />
       <h1 className={classNames(cl["hero__heading"])}>
         Welcome to Dementra World

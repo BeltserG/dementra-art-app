@@ -13,7 +13,7 @@ const MainLayout = ({ children, pageProps }) => {
       <div id="modal"></div>
       {!isError && <Header />}
       <main>{children}</main>
-      {/* {!isError && <Footer pageProps={pageProps}/>} */}
+      {!isError && <Footer pageProps={pageProps}/>}
     </>
   );
 };

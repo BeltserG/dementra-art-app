@@ -4,7 +4,6 @@ import cl from "@/components/widgets/shared/Header/styles/Header.module.scss";
 import classNames from "classnames";
 
 const NavItem2 = ({ item }) => {
-  console.log("/" + item)
   return (
     <a className={classNames(cl["nav__link2"])} href={"/" + item}>
       <li className={classNames(cl["header__nav__list--item2"])} key={item + "-link"}>

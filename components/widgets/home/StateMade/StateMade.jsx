@@ -20,7 +20,7 @@ const StateMade = ({ biography }) => {
         quality={100}
         style={{
           width: "100%",
-          height: "100%",
+          height: "118%",
         }}
       />
       <div className={classNames(cl["state-made__content"])}>

@@ -7,7 +7,7 @@ function logoScrollAnimation(className = ""){
     scrollTrigger:{
         trigger: `.${className}`,
         start: `top top`,
-        end: `bottom -${window.innerHeight/2}px`,
+        end: `bottom center`,
         metrics: true,
         toggleActions: "play none reverse none",
         scrub:.5,
@@ -16,7 +16,7 @@ function logoScrollAnimation(className = ""){
     y:-30,
     opacity: 0,
     ease: "linear",
-    duration: .25});
+    duration: .15});
 }
 
 export {logoScrollAnimation}

@@ -7,14 +7,13 @@
     position: relative;
     width: 100%;
     z-index:-1;
-    // background-image: url("/images/hero_images/night_image_green.png");
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-position: top center;
     padding: v.$p-big;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(0, 69, 75);
+    background-image: linear-gradient(0deg, #257187, #00454b);
+
     
 }
 .hero-background{
@@ -47,16 +46,10 @@
     }
 }
 .hero__heading{
-    // font-size: 3rem;
-    // position: absolute;
-    // top:calc(45% - 1.5rem);
-    // width: 100%;
     text-align: center;
-    // opacity: 1;
-    // z-index: 10;
-    // border: 1px solid red;
     overflow:hidden;
-    
+
+    // transform: translateY(-5%);
 }
 .hero__image{
     

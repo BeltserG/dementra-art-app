@@ -8,7 +8,6 @@ import cl from "./styles/Loading.module.scss";
 
 const Loading = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  console.log(isLoaded);
   useEffect(() => {
     window.addEventListener("load", ()=>{
         console.log("loaded")

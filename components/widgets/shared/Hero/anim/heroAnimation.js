@@ -8,12 +8,14 @@ function heroAnimation() {
   document
     .querySelectorAll(".char")
     .forEach((node) => (node.style.transform = "translateY(100px)"));
-  gsap.to(".char", {
+    gsap.set(".char", {opacity: 0});
+    gsap.to(".char", {
     y: 0,
+    opacity: 1,
     duration: 0.5,
     ease: "back",
-    stagger: 0.025,
-    delay: 0.2,
+    stagger: 0.02,
+    delay: .75,
   });
 
   gsap.registerPlugin(ScrollTrigger);
@@ -23,10 +25,10 @@ function heroAnimation() {
       trigger: hero,
       start: "top top",
       end: "bottom top",
-      scrub: .5,
+      scrub: 0.5,
       pin: true,
       pinSpacing: false,
-    //   markers: true,
+      //   markers: true,
     },
   });
   //   const arr = Array.from(bgImages);
@@ -34,15 +36,19 @@ function heroAnimation() {
   //   arr.map((node, index)=>{
   //     tl.to(node, { y: `${25+5*(index)}vh` }, "<");
   //   })
-  tl.to(hero.querySelector(`.${heroCL["hero__heading"]}`), { opacity:0, duration: .15 },0);
-  tl.to(hero.querySelector(`.${heroCL["sky"]}`), { y: "-5vh" },0);
+  tl.to(
+    hero.querySelector(`.${heroCL["hero__heading"]}`),
+    { opacity: 0, duration: 0.1 },
+    0
+  );
+  tl.to(hero.querySelector(`.${heroCL["sky"]}`), { y: "-5vh" }, 0);
   tl.to(hero.querySelector(`.${heroCL["clouds"]}`), { y: "-10vh" }, 0);
   tl.to(hero.querySelector(`.${heroCL["mountains"]}`), { y: "-15vh" }, 0);
   tl.to(hero.querySelector(`.${heroCL["wind"]}`), { y: "-20vh" }, 0);
-  tl.to(hero.querySelector(`.${heroCL["fog1"]}`), { y: "-25vh" },0);
+  tl.to(hero.querySelector(`.${heroCL["fog1"]}`), { y: "-25vh" }, 0);
   tl.to(hero.querySelector(`.${heroCL["water"]}`), { y: "-30vh" }, 0);
   tl.to(hero.querySelector(`.${heroCL["fog2"]}`), { y: "-30vh" }, 0);
   tl.to(hero.querySelector(`.${heroCL["trees"]}`), { y: "-40vh" }, 0);
-}   
+}
 
 export default heroAnimation;

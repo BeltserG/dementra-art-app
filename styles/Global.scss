@@ -136,7 +136,7 @@ p {
 
 @media (min-width: 1200px) {
   h1 {
-    font-size: calc(v.$fs-h1 * 1.5);
+    font-size: calc(v.$fs-h1 * 1.6);
   }
   h2 {
     font-size: calc(v.$fs-h2 * 1.5);
@@ -151,7 +151,7 @@ p {
     font-size: calc(v.$fs-h5 * 1.5);
   }
   p {
-    font-size: calc(v.$fs-par-general * 1.5);
+    font-size: calc(v.$fs-par-general * 1.7);
     line-height: 2.25rem;
   }
 }
