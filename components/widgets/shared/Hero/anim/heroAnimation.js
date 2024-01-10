@@ -5,11 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function heroAnimation() {
   const headerText = new SplitType(`.${heroCL["hero__heading"]}`);
-  console.log(SplitType.defaults)
   document
     .querySelectorAll(".char")
     .forEach((node) => (node.style.transform = "translateY(100px)"));
-    gsap.set(".char", {autoAlpha: 0});
+    gsap.set(`.${heroCL["hero__heading"]}`, {autoAlpha: 1});
     gsap.to(".char", {
     y: 0,
     autoAlpha: 1,

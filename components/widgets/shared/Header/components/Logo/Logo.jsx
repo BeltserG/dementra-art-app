@@ -18,7 +18,7 @@ const Logo = () => {
         className={classes.logo}
         alt="Dementra Art Logo"
         src={"/images/logo2.png"}
-        sizes="100vw"
+        sizes="50vw"
         width={0}
         height={0}
         quality={100}
@@ -26,6 +26,7 @@ const Logo = () => {
           width: "100%",
           height: "auto",
         }}
+        priority
       />
       </Link>
     </div>
