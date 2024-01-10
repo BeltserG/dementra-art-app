@@ -10,8 +10,7 @@ const Hamburger = ({navOpened, changeNavOpened}) => {
 
   return (
     <button className={classNames(cl["mob-nav-button"], navOpened ? cl["opened"] : cl["closed"])} 
-            onClick={()=> changeNavOpened()}
-            aria-label="menu-button">
+            onClick={()=> changeNavOpened()}>
       <svg viewBox="0 0 100 100">
         <rect
           className={classNames(cl["line"], cl["top"])}

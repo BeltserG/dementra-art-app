@@ -8,10 +8,11 @@ function heroAnimation() {
   document
     .querySelectorAll(".char")
     .forEach((node) => (node.style.transform = "translateY(100px)"));
+    gsap.set(".char", {opacity: 0});
     gsap.set(`.${heroCL["hero__heading"]}`, {autoAlpha: 1});
     gsap.to(".char", {
     y: 0,
-    autoAlpha: 1,
+    opacity: 1,
     duration: 0.5,
     ease: "back",
     stagger: 0.02,
