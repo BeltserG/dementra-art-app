@@ -1,22 +1,29 @@
 import cl from "@/components/widgets/shared/Footer/styles/Footer.module.scss";
 import classNames from "classnames";
 // import fs from "fs";
-const SocialNetworks = ({socialNetworks}) => {
+const SocialNetworks = ({ socialNetworks }) => {
   return (
     <div className={classNames(cl["footer-info__social-networks"])}>
       <h5 className={classNames(cl["social-networks--heading"])}>Follow</h5>
       <ul className={classNames(cl["social-networks--list"])}>
-        {socialNetworks.map((network)=>
-        <a key={network.id + "-link"} href={network.url} target="_blank">
-          <img key={network.id}
-          className={classNames(cl["social-networks--item"])}
-          src={network.icon}/>
-        </a>
-        )}
+        {socialNetworks.map((network) => (
+          <a
+            key={network.id + "-link"}
+            href={network.url}
+            target="_blank"
+            aria-label={"Visit my " + network.id + " page"}
+          >
+            <img
+              key={network.id}
+              className={classNames(cl["social-networks--item"])}
+              src={network.icon}
+              alt={network.id + " link"}
+            />
+          </a>
+        ))}
       </ul>
     </div>
-  )
-}
+  );
+};
 
-
-export default SocialNetworks
+export default SocialNetworks;

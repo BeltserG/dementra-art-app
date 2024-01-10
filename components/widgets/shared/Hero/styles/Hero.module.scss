@@ -46,9 +46,11 @@
     }
 }
 .hero__heading{
-    text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    text-align: -webkit-center;
     overflow:hidden;
-
+    font-kerning: none;
     // transform: translateY(-5%);
 }
 .hero__image{

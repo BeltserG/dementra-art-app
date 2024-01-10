@@ -64,6 +64,7 @@ $transform-value: -12rem;
        url('/fonts/soria/soria-font-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 
 }
 
@@ -107,6 +108,7 @@ $transform-value: -12rem;
        url('/fonts/taviraj/Taviraj-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  // font-display: swap;
 
 }
 @font-face {
@@ -115,5 +117,6 @@ $transform-value: -12rem;
        url('/fonts/taviraj/Taviraj-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
+  // font-display: swap;
 
 }

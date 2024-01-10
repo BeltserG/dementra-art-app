@@ -31,7 +31,7 @@ const NavItem = ({ item, changeNavOpened }) => {
       //   href={getRoute(item)}
       //   onClick={isMobile ? changeNavOpened : () => {}}
       // >
-        <div
+        <li
           className={classNames(cl["nav__link"], cl["gallery"])}
           key={item}
           onMouseEnter={() => {
@@ -40,14 +40,14 @@ const NavItem = ({ item, changeNavOpened }) => {
           }}
           onMouseLeave={() => setSecondLayerIsVisible(false)}
         >
-          <li key={item} className={cl["header__nav__list--item"]}>
+          <div key={item} className={cl["header__nav__list--item"]}>
             <NavigationSecond
               isVisible={secondLayerisVisible}
               changeNavOpened={isMobile ? changeNavOpened : () => {}}
             />
             {item}
-          </li>
-        </div>
+          </div>
+        </li>
       // {/* </Link> */}
     );
   }

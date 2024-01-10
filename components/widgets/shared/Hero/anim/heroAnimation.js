@@ -5,13 +5,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function heroAnimation() {
   const headerText = new SplitType(`.${heroCL["hero__heading"]}`);
+  console.log(SplitType.defaults)
   document
     .querySelectorAll(".char")
     .forEach((node) => (node.style.transform = "translateY(100px)"));
-    gsap.set(".char", {opacity: 0});
+    gsap.set(".char", {autoAlpha: 0});
     gsap.to(".char", {
     y: 0,
-    opacity: 1,
+    autoAlpha: 1,
     duration: 0.5,
     ease: "back",
     stagger: 0.02,
