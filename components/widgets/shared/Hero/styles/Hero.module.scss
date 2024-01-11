@@ -46,9 +46,10 @@
 .hero__heading{
     // display: flex;
     // flex-direction: column;
-    text-align: center;
+    text-align: -webkit-center;
     overflow:hidden;
     visibility: hidden;
+    
     // transform: translateY(-5%);
 }
 .hero__image{

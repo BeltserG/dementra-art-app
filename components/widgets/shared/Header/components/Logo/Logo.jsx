@@ -13,8 +13,8 @@ const Logo = () => {
   return (
     <div className={classes["logo-container"]}>
       <Link href={"/"}>
-        <img src="/images/logo2.png" alt="logo" className={classes.logo} />
-        {/* <Image
+        {/* <img src="/images/logo2.png" alt="logo" className={classes.logo} /> */}
+        <Image
         className={classes.logo}
         alt="Dementra Art Logo"
         src={"/images/logo2.png"}
@@ -27,7 +27,7 @@ const Logo = () => {
           height: "auto",
         }}
         priority
-      /> */}
+      />
       </Link>
     </div>
   );

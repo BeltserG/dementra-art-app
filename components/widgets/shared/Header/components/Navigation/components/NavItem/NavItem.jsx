@@ -31,23 +31,23 @@ const NavItem = ({ item, changeNavOpened }) => {
       //   href={getRoute(item)}
       //   onClick={isMobile ? changeNavOpened : () => {}}
       // >
-        <div
-          className={classNames(cl["nav__link"], cl["gallery"])}
-          key={item}
-          onMouseEnter={() => {
-            setSecondLayerIsVisible(true);
-            setGalleryIsClicked(false);
-          }}
-          onMouseLeave={() => setSecondLayerIsVisible(false)}
-        >
-          <li key={item} className={cl["header__nav__list--item"]}>
-            <NavigationSecond
-              isVisible={secondLayerisVisible}
-              changeNavOpened={isMobile ? changeNavOpened : () => {}}
-            />
-            {item}
-          </li>
+      <li
+        className={classNames(cl["nav__link"], cl["gallery"])}
+        key={item}
+        onMouseEnter={() => {
+          setSecondLayerIsVisible(true);
+          setGalleryIsClicked(false);
+        }}
+        onMouseLeave={() => setSecondLayerIsVisible(false)}
+      >
+        <div key={item} className={cl["header__nav__list--item"]}>
+          <NavigationSecond
+            isVisible={secondLayerisVisible}
+            changeNavOpened={isMobile ? changeNavOpened : () => {}}
+          />
+          {item}
         </div>
+      </li>
       // {/* </Link> */}
     );
   }

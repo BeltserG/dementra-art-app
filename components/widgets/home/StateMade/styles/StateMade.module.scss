@@ -2,7 +2,7 @@
 
 .statemade {
   // height: 100dvh;
-  --transform-value: -5rem;
+  --transform-value: -0rem;
   --fs-statemade-base: 1rem;
   padding: v.$p-big;
   position: relative;
@@ -18,6 +18,7 @@
   // background-repeat: no-repeat;
   // background-position: top center;
   height: calc(100svh - v.$transform-value);
+  // border: 1px solid red;
 }
 .statemade-background {
   position: absolute;
