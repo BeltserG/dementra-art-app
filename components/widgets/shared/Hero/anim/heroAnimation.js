@@ -27,7 +27,7 @@ function heroAnimation() {
       trigger: hero,
       start: "top top",
       end: "bottom top",
-      scrub: 0.5,
+      scrub: 0.25,
       pin: true,
       pinSpacing: false,
       //   markers: true,
