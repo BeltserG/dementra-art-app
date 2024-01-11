@@ -3,6 +3,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function navScrollAnimation(className = ""){
   gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ignoreMobileResize: true});
   gsap.to(`.${className}`, {
     scrollTrigger:{
         trigger: `.${className}`,

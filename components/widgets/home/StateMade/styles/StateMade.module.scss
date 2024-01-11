@@ -17,7 +17,7 @@
   // background-size: cover;
   // background-repeat: no-repeat;
   // background-position: top center;
-  height: calc(100dvh - v.$transform-value);
+  height: calc(100svh - v.$transform-value);
 }
 .statemade-background {
   position: absolute;

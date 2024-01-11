@@ -20,6 +20,7 @@ function heroAnimation() {
   });
 
   gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.config({ignoreMobileResize: true});
   const hero = document.querySelector(`.${heroCL["hero"]}`);
   const tl = gsap.timeline({
     scrollTrigger: {
