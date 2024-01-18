@@ -33,20 +33,6 @@ function stateMadeScrollAnimation(className = "") {
   //   ease: "linear",
   //   duration: 1,
   // });
-
-  // gsap.to(`.${cl["content__image-container"]}`, {
-  //   scrollTrigger: {
-  //     trigger: `.${className}`,
-  //     start: `top bottom`,
-  //     end: `top center`,
-  //     metrics: true,
-  //     toggleActions: "play none none none",
-  //     // scrub:true,
-  //   },
-  //   scale: 1,
-  //   ease: "linear",
-  //   duration: 1,
-  // });
 }
 
 export { stateMadeScrollAnimation };

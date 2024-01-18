@@ -18,7 +18,12 @@
   // background-repeat: no-repeat;
   // background-position: top center;
   height: calc(100svh - v.$transform-value);
-  // border: 1px solid red;
+}
+.biography-nav-target{
+  position: absolute;
+  width: auto;
+  height: 100lvh;
+  bottom: 0;
 }
 .statemade-background {
   position: absolute;

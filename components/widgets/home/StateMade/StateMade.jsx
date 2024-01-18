@@ -2,14 +2,14 @@ import cl from "./styles/StateMade.module.scss";
 import classNames from "classnames";
 import { stateMadeScrollAnimation } from "./anim/stateMadeScroll";
 import { useEffect } from "react";
-import gsap from "gsap";
 import Image from "next/image";
 const StateMade = ({ biography }) => {
   useEffect(() => {
     stateMadeScrollAnimation(cl["statemade"]);
   }, []);
   return (
-    <section id="biography" className={classNames(cl["statemade"])}>
+    <section className={classNames(cl["statemade"])}>
+      <div id="biography" className={classNames(cl["biography-nav-target"])}></div>
       <Image
         className={classNames(cl["statemade-background"])}
         alt="Image of the Dementra World"
