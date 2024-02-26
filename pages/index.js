@@ -1,6 +1,7 @@
 import Hero from "@/components/widgets/shared/Hero/Hero";
 import HomeGallerySection from "@/components/widgets/home/HomeGallerySection/HomeGallerySection";
 import StateMade from "@/components/widgets/home/StateMade/StateMade";
+import ArtWorks from "../components/widgets/home/Artworks/ArtWorks";
 import Contact from "@/components/widgets/home/Contact/Contact";
 import { useState } from "react";
 import { getStaticPropsFromJSON } from "@/helpers/props/getStaticPropsFromJSON";
@@ -9,6 +10,7 @@ const Mainpage = (props) => {
     <>
       <Hero />
       <StateMade biography={props.biography} />
+      <ArtWorks/>
       {/* <HomeGallerySection gallery={props.gallery}/> */}
       {/* <Contact /> */}
     </>

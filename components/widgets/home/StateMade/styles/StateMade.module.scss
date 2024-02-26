@@ -12,18 +12,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 0rem;
   // background-image: url("/images/statemade_images/back.png");
   // background-size: cover;
   // background-repeat: no-repeat;
   // background-position: top center;
-  height: calc(100svh - v.$transform-value);
+  // height: calc(100lvh - v.$transform-value);
+  height: 100lvh;
+  // border: 1px solid red;
 }
 .biography-nav-target{
   position: absolute;
   width: auto;
   height: 100lvh;
   bottom: 0;
+  // border: 1px solid red;
+
 }
 .statemade-background {
   position: absolute;
@@ -32,40 +36,6 @@
   object-fit: cover;
   // transform: translateY(-15%);
   // object-position: center center;
-  @media (min-width: 900px) {
-    .footer {
-      grid: auto auto / 1fr 1fr 1fr;
-    }
-    .footer__logo {
-      grid-column: 1/ 2;
-    }
-    .logo--image {
-      max-width: 9rem;
-    }
-  
-    .footer-info__sections {
-      order: 1;
-      grid-column: 2/ 3;
-    }
-    .sections--list {
-      // flex-wrap: wrap;
-      flex-direction: column;
-    }
-    .footer-info__social-networks {
-      order: 2;
-      justify-content: flex-start;
-      grid-column: 3/4;
-    }
-    .footer-copyright-container {
-      order: 3;
-      grid-column: span 3;
-    }
-    .sections--list-item {
-      font-size: 1rem;
-    }
-    .copyright-container {}
-  .developer-link {}
-  }
   z-index: -1;
 }
 .gem-container {

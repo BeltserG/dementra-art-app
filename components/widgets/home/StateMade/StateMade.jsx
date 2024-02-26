@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 const StateMade = ({ biography }) => {
   useEffect(() => {
-    stateMadeScrollAnimation(cl["statemade"]);
+    stateMadeScrollAnimation(cl["biography-nav-target"]);
   }, []);
   return (
     <section className={classNames(cl["statemade"])}>

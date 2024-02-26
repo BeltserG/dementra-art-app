@@ -28,21 +28,49 @@
       },
       {
         "id":"2",
-        "name": "ArtWork2",
+        "name": "Mushroom Story",
         "description": " lorem ipsum dolor sit amet, consectet lorem",
-        "thumbnail-image":"/images/works/digital/Corals/Corals-1.png"
+        "works": [
+          {
+            "name": "Promo",
+            "description": "",
+            "url": "/images/works/digital/Mushroom Story/1_Promo.png"
+          },
+          {
+            "name": "ColorSearch",
+            "description": "",
+            "url": "/images/works/digital/Mushroom Story/2_ColorSearch.png"
+          },
+          {
+            "name": "Characters",
+            "description": "",
+            "url": "/images/works/digital/Mushroom Story/3_Characters.png"
+          },
+          {
+            "name": "Thumbnails",
+            "description": "",
+            "url": "/images/works/digital/Mushroom Story/4_Thumbnails.png"
+          }
+        ],
+        "thumbnail-image":"/images/works/digital/Mushroom Story/1_Promo.png"
       },
       {
         "id":"3",
         "name": "ArtWork3",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "thumbnail-image":"/images/works/digital/Corals/Corals-2.png"
+        "thumbnail-image":"/images/works/digital/Mushroom Story/2_ColorSearch.png"
       },
       {
         "id":"4",
         "name": "ArtWork4",
         "description": "lorem ipsum dolor sit amet, consectet lorem",
-        "thumbnail-image":"/images/works/digital/Corals/Corals-3.png"
+        "thumbnail-image":"/images/works/digital/Mushroom Story/3_Characters.png"
+      },
+      {
+        "id":"5",
+        "name": "ArtWork4",
+        "description": "lorem ipsum dolor sit amet, consectet lorem",
+        "thumbnail-image":"/images/works/digital/Mushroom Story/3_Characters.png"
       }
     ],
     "description": "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet",
