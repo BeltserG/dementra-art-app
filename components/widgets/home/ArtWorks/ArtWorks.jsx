@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 
-const Artworks = () => {
+const ArtWorks = () => {
   useEffect(() => {
     let ctx = gsap.context(() => {
       artWorksScrollAnimation(cl["artworks"]);
@@ -64,5 +64,5 @@ const Artworks = () => {
   );
 };
 
-export default Artworks;
+export default ArtWorks;
 //1
